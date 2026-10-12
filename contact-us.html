@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Disaster Management Initiatives and Convergence Society (DMICS)</title>
+  <meta name="description" content="Reach out to DMICS. Have questions, suggestions, or ideas? Contact our secretariat in Hyderabad and New Delhi, India.">
+  <link rel="icon" type="image/x-icon" href="https://www.dmics.org/assests/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0b2a4a;
+      --color-navy-dark: #071c33;
+      --color-navy-light: #133d69;
+      --color-gov: #1f5f99;
+      --color-saffron: #e07b00;
+      --color-saffron-dark: #b86200;
+      --color-paper: #f4f6f9;
+      --font-serif: "Merriweather", Georgia, serif;
+      --font-sans: "Source Sans 3", system-ui, sans-serif;
+    }
+    .h-serif { font-family: var(--font-serif); }
+    body { font-family: var(--font-sans); }
+    .ticker { animation: ticker 28s linear infinite; display: inline-block; white-space: nowrap; }
+    @keyframes ticker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    .has-dd:hover .dd { display: block; }
+    .dd { display: none; }
+  </style>
+</head>
+<body class="bg-paper text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+<!-- Top utility bar -->
+<div class="bg-navy-dark text-slate-200 text-xs py-1.5 px-4 border-b border-navy-light/40">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+    <div class="flex items-center gap-4">
+      <span><i class="fa-solid fa-envelope text-saffron mr-1.5"></i> dmics.india@gmail.com</span>
+      <span class="hidden sm:inline"><i class="fa-solid fa-phone text-saffron mr-1.5"></i> +91 99081 29288</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://www.dmics.org" target="_blank" class="hover:text-saffron transition-colors">Official Portal: dmics.org</a>
+      <span class="text-slate-500">|</span>
+      <div class="flex gap-2">
+        <a href="#" class="hover:text-saffron transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-saffron transition-colors" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-saffron transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-saffron transition-colors" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-gov">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS logo" class="h-16 md:h-20 w-auto">
+      <div class="hidden sm:block">
+        <div class="h-serif text-navy text-lg md:text-2xl font-black leading-tight">Disaster Management Initiatives<br>and Convergence Society</div>
+        <div class="text-xs md:text-sm text-slate-500 tracking-wide uppercase mt-1">Est. 2005 &middot; Registered under the Societies Registration Act, Govt. of Andhra Pradesh</div>
+      </div>
+    </a>
+    <img src="https://www.dmics.org/assests/images/WCDM-Logo.png" alt="WCDM logo" class="h-16 md:h-20 w-auto">
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[15px] font-semibold">
+      <li><a href="index.html" class="block px-4 py-3.5 hover:bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-4 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="about-us.html">About us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li></ul></li>
+      <li><a href="milestone.html" class="block px-4 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-4 py-3.5 hover:bg-gov">Events</a></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li></ul></li>
+      <li class="has-dd relative"><a href="reports.html" class="block px-4 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="reports.html">Reports / Publications</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Media</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li></ul></li>
+      <li class="has-dd relative"><a href="national-collaborations.html" class="block px-4 py-3.5 hover:bg-gov">Collaborations <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="international-collaborations.html">International Collaboration</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="national-collaborations.html">National Collaboration</a></li></ul></li>
+      <li class="has-dd relative"><a href="contact-us.html" class="block px-4 py-3.5 bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="collaborate.html">Collaborate with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
+          <li><a class="block px-4 py-2.5 bg-paper font-semibold text-gov" href="contact-us.html">Contact Us</a></li></ul></li>
+      <li><a href="Gallery.html" class="block px-4 py-3.5 hover:bg-gov">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Flash news -->
+<div class="bg-saffron text-white">
+  <div class="max-w-7xl mx-auto flex items-stretch">
+    <div class="bg-navy-dark px-4 py-2 font-bold uppercase text-sm flex items-center gap-2 shrink-0"><i class="fa-solid fa-bullhorn"></i> Flash News</div>
+    <div class="overflow-hidden flex-1 py-2 text-[15px] font-semibold"><span class="ticker">Upcoming Conference: Global Dialogue on Climate Change Adaptation and Disaster Risk Reduction (GDCCA &amp; DRR) - 3 to 6 June 2026, New Delhi</span></div>
+  </div>
+</div>
+
+<!-- Page Banner / Header Breadcrumb -->
+<section class="bg-gradient-to-r from-navy-dark via-navy to-gov text-white py-12 border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-slate-300 mb-3" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-house text-xs"></i> Home</a>
+      <span class="text-slate-400">/</span>
+      <span class="text-slate-400">Get Involved</span>
+      <span class="text-slate-400">/</span>
+      <span class="text-saffron font-semibold">Contact Us</span>
+    </nav>
+    <h1 class="h-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">Contact Us</h1>
+    <div class="w-20 h-1 bg-saffron mt-3"></div>
+  </div>
+</section>
+
+<!-- Main Content Area -->
+<main class="bg-paper py-12">
+  <div class="max-w-7xl mx-auto px-4 space-y-12">
+
+    <!-- Contact Grid: Form (Left) & Address Box (Right) -->
+    <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+
+      <!-- Form Column -->
+      <section class="lg:col-span-7 bg-white p-6 sm:p-8 md:p-10 border-t-4 border-navy shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="mb-6">
+            <span class="text-xs uppercase font-bold text-saffron tracking-wider">Get in Touch with DMICS</span>
+            <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy mt-1">Send Us a Message</h2>
+            <div class="w-16 h-1 bg-saffron mt-2 mb-4"></div>
+            <p class="text-slate-700 leading-relaxed text-sm sm:text-base">
+              Have questions, suggestions, or ideas to share? We'd love to hear from you. Reach out to us to learn more about our initiatives, explore opportunities for engagement, or simply connect with our team.
+            </p>
+          </div>
+
+          <form id="contactForm" class="space-y-5" onsubmit="event.preventDefault(); document.getElementById('contactSuccessModal').classList.remove('hidden');">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="firstName" class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5">First Name <span class="text-red-500">*</span></label>
+                <input type="text" id="firstName" required placeholder="Enter first name" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+              </div>
+              <div>
+                <label for="lastName" class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5">Last Name <span class="text-red-500">*</span></label>
+                <input type="text" id="lastName" required placeholder="Enter last name" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="email" class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5">Email Address <span class="text-red-500">*</span></label>
+                <input type="email" id="email" required placeholder="Enter email" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+                <p class="text-[11px] text-slate-500 mt-1">We'll never share your email with anyone else.</p>
+              </div>
+              <div>
+                <label for="mobile" class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5">Mobile Number <span class="text-red-500">*</span></label>
+                <input type="tel" id="mobile" pattern="[0-9]{10}" required placeholder="10-digit mobile number" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+                <p class="text-[11px] text-slate-500 mt-1">Example: 9876543210</p>
+              </div>
+            </div>
+
+            <div>
+              <label for="message" class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5">Message <span class="text-red-500">*</span></label>
+              <textarea id="message" rows="4" required placeholder="Type your message here..." class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors"></textarea>
+            </div>
+
+            <button type="submit" class="bg-navy hover:bg-gov text-white font-bold py-3 px-8 text-sm uppercase tracking-wider shadow transition-colors flex items-center gap-2 cursor-pointer">
+              <i class="fa-solid fa-paper-plane text-saffron"></i> Submit Message
+            </button>
+          </form>
+        </div>
+
+        <!-- Form Success State Modal (Demo) -->
+        <div id="contactSuccessModal" class="hidden fixed inset-0 bg-navy/80 flex items-center justify-center p-4 z-50">
+          <div class="bg-white max-w-md w-full p-8 border-t-4 border-saffron shadow-2xl text-center">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-2xl mb-4">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 class="h-serif text-2xl font-black text-navy mb-2">Message Sent!</h4>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+              Thank you for contacting DMICS. Your inquiry has been received by our secretariat. We will respond to your message promptly.
+            </p>
+            <button onclick="document.getElementById('contactSuccessModal').classList.add('hidden'); document.getElementById('contactForm').reset();" class="bg-navy hover:bg-gov text-white font-bold px-6 py-2.5 text-sm uppercase tracking-wider transition-colors cursor-pointer">
+              Close
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Address & Info Column (Right) -->
+      <section class="lg:col-span-5 bg-gradient-to-br from-navy via-navy to-gov text-white p-6 sm:p-8 md:p-10 border-t-4 border-saffron shadow-sm flex flex-col justify-between">
+        <div>
+          <div class="mb-6">
+            <span class="text-xs uppercase font-bold text-saffron tracking-wider">Secretariat Headquarters</span>
+            <h3 class="h-serif text-2xl sm:text-3xl font-black text-white mt-1">Address &amp; Contact</h3>
+            <div class="w-16 h-1 bg-saffron mt-2"></div>
+          </div>
+
+          <div class="space-y-6 text-sm">
+            <!-- Location -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded bg-navy-dark border border-white/10 flex items-center justify-center text-saffron shrink-0">
+                <i class="fa-solid fa-location-arrow text-base"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-1">Registered Secretariat</h4>
+                <p class="text-slate-300 leading-relaxed text-sm">
+                  DMICS-WCDM, 601, Meenakshi House, 6th Floor, Road No: 7, Banjara Hills, Hyderabad &ndash; 500034, Telangana, India
+                </p>
+              </div>
+            </div>
+
+            <!-- Phone numbers -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded bg-navy-dark border border-white/10 flex items-center justify-center text-saffron shrink-0">
+                <i class="fa-solid fa-phone text-base"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-1">Direct Lines</h4>
+                <div class="space-y-1">
+                  <a href="tel:+917893222289" class="block text-slate-300 hover:text-saffron transition-colors font-medium">+91-7893222289</a>
+                  <a href="tel:+917893020209" class="block text-slate-300 hover:text-saffron transition-colors font-medium">+91-7893020209</a>
+                  <a href="tel:+919908129288" class="block text-slate-300 hover:text-saffron transition-colors font-medium">+91-9908129288</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Emails -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded bg-navy-dark border border-white/10 flex items-center justify-center text-saffron shrink-0">
+                <i class="fa-solid fa-envelope text-base"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-xs uppercase tracking-wider mb-1">Official Email Desks</h4>
+                <div class="space-y-1">
+                  <a href="mailto:dmics.future@gmail.com" class="block text-slate-300 hover:text-saffron transition-colors break-all">dmics.future@gmail.com</a>
+                  <a href="mailto:anandasbabu@gmail.com" class="block text-slate-300 hover:text-saffron transition-colors break-all">anandasbabu@gmail.com</a>
+                  <a href="mailto:dmics.india@gmail.com" class="block text-slate-300 hover:text-saffron transition-colors break-all">dmics.india@gmail.com</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="mt-8 pt-6 border-t border-white/15">
+          <h4 class="font-bold text-xs uppercase tracking-wider text-saffron mb-3">Connect on Social Media</h4>
+          <div class="flex gap-3">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded bg-navy-dark hover:bg-saffron text-white flex items-center justify-center text-lg transition-colors" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/HtmlcoderMe" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded bg-navy-dark hover:bg-saffron text-white flex items-center justify-center text-lg transition-colors" aria-label="Twitter">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/login" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded bg-navy-dark hover:bg-saffron text-white flex items-center justify-center text-lg transition-colors" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.skype.com/en/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded bg-navy-dark hover:bg-saffron text-white flex items-center justify-center text-lg transition-colors" aria-label="Skype">
+              <i class="fa-brands fa-skype"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Embedded Google Map -->
+    <section class="bg-white p-4 border border-slate-200 shadow-sm">
+      <div class="mb-4 px-2 flex items-center justify-between flex-wrap gap-2">
+        <h3 class="h-serif text-lg font-bold text-navy flex items-center gap-2">
+          <i class="fa-solid fa-map-location-dot text-saffron"></i> Location Map &ndash; DMICS Secretariat, Hyderabad
+        </h3>
+        <span class="text-xs text-slate-500">Meenakshi House, Banjara Hills, Hyderabad</span>
+      </div>
+      <div class="w-full h-96 overflow-hidden border border-slate-200">
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8337580848615!2d78.4395945148768!3d17.419763888059155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9739c4b3ab6f%3A0xb55b21b1d8dcaed3!2sDMICS!5e0!3m2!1sen!2sin!4v1652248411906!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy-dark text-slate-300 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS" class="h-16 bg-white p-1 mb-4">
+      <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+        Disaster Management Initiatives and Convergence Society (DMICS) is a registered society committed to advancing disaster risk reduction, scientific convergence, community resilience, and climate change adaptation across the globe.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Quick Links</h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="about-us.html" class="hover:text-saffron">About Us</a></li>
+        <li><a href="vision.html" class="hover:text-saffron">Vision &amp; Mission</a></li>
+        <li><a href="milestone.html" class="hover:text-saffron">Our Journey</a></li>
+        <li><a href="events.html" class="hover:text-saffron">Events &amp; Conferences</a></li>
+        <li><a href="reports.html" class="hover:text-saffron">Publications &amp; Reports</a></li>
+        <li><a href="wcdm-drr-awards-2025.html" class="hover:text-saffron">WCDM DRR Awards 2025</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Contact</h4>
+      <div class="text-xs space-y-2 text-slate-400">
+        <p><i class="fa-solid fa-location-dot text-saffron mr-2"></i> DMICS-WCDM, 601, Meenakshi House, Rd No: 7, Banjara Hills, Hyderabad - 500034</p>
+        <p><i class="fa-solid fa-envelope text-saffron mr-2"></i> dmics.future@gmail.com / dmics.india@gmail.com</p>
+        <p><i class="fa-solid fa-phone text-saffron mr-2"></i> +91-7893222289 / +91-7893020209</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black/40 py-4 text-center text-xs text-slate-500 border-t border-navy-light/30">
+    &copy; 2026 Disaster Management Initiatives and Convergence Society (DMICS). All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

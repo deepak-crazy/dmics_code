@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborate with Us | Disaster Management Initiatives and Convergence Society (DMICS)</title>
+  <meta name="description" content="Collaborate with DMICS to drive innovative disaster management initiatives and create sustainable solutions for risk reduction and recovery.">
+  <link rel="icon" type="image/x-icon" href="https://www.dmics.org/assests/images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0b2a4a;
+      --color-navy-dark: #071c33;
+      --color-navy-light: #133d69;
+      --color-gov: #1f5f99;
+      --color-saffron: #e07b00;
+      --color-saffron-dark: #b86200;
+      --color-paper: #f4f6f9;
+      --font-serif: "Merriweather", Georgia, serif;
+      --font-sans: "Source Sans 3", system-ui, sans-serif;
+    }
+    .h-serif { font-family: var(--font-serif); }
+    body { font-family: var(--font-sans); }
+    .ticker { animation: ticker 28s linear infinite; display: inline-block; white-space: nowrap; }
+    @keyframes ticker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    .has-dd:hover .dd { display: block; }
+    .dd { display: none; }
+  </style>
+</head>
+<body class="bg-paper text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+<!-- Top utility bar -->
+<div class="bg-navy-dark text-slate-200 text-xs py-1.5 px-4 border-b border-navy-light/40">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+    <div class="flex items-center gap-4">
+      <span><i class="fa-solid fa-envelope text-saffron mr-1.5"></i> dmics.india@gmail.com</span>
+      <span class="hidden sm:inline"><i class="fa-solid fa-phone text-saffron mr-1.5"></i> +91 99081 29288</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="https://www.dmics.org" target="_blank" class="hover:text-saffron transition-colors">Official Portal: dmics.org</a>
+      <span class="text-slate-500">|</span>
+      <div class="flex gap-2">
+        <a href="#" class="hover:text-saffron transition-colors" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="hover:text-saffron transition-colors" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" class="hover:text-saffron transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="hover:text-saffron transition-colors" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-gov">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS logo" class="h-16 md:h-20 w-auto">
+      <div class="hidden sm:block">
+        <div class="h-serif text-navy text-lg md:text-2xl font-black leading-tight">Disaster Management Initiatives<br>and Convergence Society</div>
+        <div class="text-xs md:text-sm text-slate-500 tracking-wide uppercase mt-1">Est. 2005 &middot; Registered under the Societies Registration Act, Govt. of Andhra Pradesh</div>
+      </div>
+    </a>
+    <img src="https://www.dmics.org/assests/images/WCDM-Logo.png" alt="WCDM logo" class="h-16 md:h-20 w-auto">
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[15px] font-semibold">
+      <li><a href="index.html" class="block px-4 py-3.5 hover:bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-4 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="about-us.html">About us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li></ul></li>
+      <li><a href="milestone.html" class="block px-4 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-4 py-3.5 hover:bg-gov">Events</a></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li></ul></li>
+      <li class="has-dd relative"><a href="reports.html" class="block px-4 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="reports.html">Reports / Publications</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Media</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li></ul></li>
+      <li class="has-dd relative"><a href="national-collaborations.html" class="block px-4 py-3.5 hover:bg-gov">Collaborations <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="international-collaborations.html">International Collaboration</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="national-collaborations.html">National Collaboration</a></li></ul></li>
+      <li class="has-dd relative"><a href="collaborate.html" class="block px-4 py-3.5 bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
+          <li><a class="block px-4 py-2.5 bg-paper font-semibold text-gov" href="collaborate.html">Collaborate with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="contact-us.html">Contact Us</a></li></ul></li>
+      <li><a href="Gallery.html" class="block px-4 py-3.5 hover:bg-gov">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Flash news -->
+<div class="bg-saffron text-white">
+  <div class="max-w-7xl mx-auto flex items-stretch">
+    <div class="bg-navy-dark px-4 py-2 font-bold uppercase text-sm flex items-center gap-2 shrink-0"><i class="fa-solid fa-bullhorn"></i> Flash News</div>
+    <div class="overflow-hidden flex-1 py-2 text-[15px] font-semibold"><span class="ticker">Upcoming Conference: Global Dialogue on Climate Change Adaptation and Disaster Risk Reduction (GDCCA &amp; DRR) - 3 to 6 June 2026, New Delhi</span></div>
+  </div>
+</div>
+
+<!-- Page Banner / Header Breadcrumb -->
+<section class="bg-gradient-to-r from-navy-dark via-navy to-gov text-white py-12 border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-slate-300 mb-3" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-house text-xs"></i> Home</a>
+      <span class="text-slate-400">/</span>
+      <span class="text-slate-400">Get Involved</span>
+      <span class="text-slate-400">/</span>
+      <span class="text-saffron font-semibold">Collaborate with Us</span>
+    </nav>
+    <h1 class="h-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">Collaborate With Us</h1>
+    <div class="w-20 h-1 bg-saffron mt-3"></div>
+  </div>
+</section>
+
+<!-- Main Content Area -->
+<main class="bg-paper py-12">
+  <div class="max-w-7xl mx-auto px-4 space-y-10">
+
+    <!-- Mission & Main Statement Card -->
+    <article class="bg-white p-6 sm:p-8 md:p-10 border-t-4 border-navy shadow-sm">
+      <div class="flex items-center justify-between flex-wrap gap-4 pb-4 mb-6 border-b border-slate-200">
+        <div>
+          <span class="text-xs uppercase font-bold text-saffron tracking-wider">Strategic Partnerships &middot; Convergence &middot; Collective Impact</span>
+          <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy mt-1">Partnering for Resilient Futures</h2>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-semibold uppercase bg-paper px-3 py-1.5 border border-slate-200 text-gov">
+          <i class="fa-solid fa-handshake text-saffron"></i> Institutional Alliances
+        </div>
+      </div>
+
+      <!-- Live Authentic Quote Box -->
+      <div class="bg-paper border-l-4 border-saffron p-6 sm:p-8 mb-8 rounded-r">
+        <p class="text-slate-800 text-lg sm:text-xl font-medium leading-relaxed italic">
+          &ldquo;We believe in the power of partnerships. If you represent an organization, academic institution, or community group, collaborate with us to drive innovative disaster management initiatives and create sustainable solutions for risk reduction and recovery.&rdquo;
+        </p>
+        <div class="mt-3 text-right text-sm font-bold text-navy">
+          &mdash; Disaster Management Initiatives and Convergence Society (DMICS)
+        </div>
+      </div>
+
+      <!-- Four Partnership Pathways -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Pathway 1: Academic & Research -->
+        <div class="bg-paper border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md hover:border-gov transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-lg bg-navy text-saffron flex items-center justify-center text-xl mb-4 shadow-sm">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3 class="h-serif text-lg font-bold text-navy mb-2">Universities &amp; Academia</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Joint research papers, conference technical tracks at WCDM, student internships, research symposiums, and disaster risk curriculum development.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-xs font-semibold text-gov">
+            Research &amp; Knowledge
+          </div>
+        </div>
+
+        <!-- Pathway 2: Government & Public Sector -->
+        <div class="bg-paper border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md hover:border-saffron transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-lg bg-saffron text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+              <i class="fa-solid fa-landmark"></i>
+            </div>
+            <h3 class="h-serif text-lg font-bold text-navy mb-2">Government &amp; SDMAs</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Policy convergence, state disaster management plans, capacity-building workshops, and technical advisories for local administration.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-xs font-semibold text-saffron-dark">
+            Policy &amp; Governance
+          </div>
+        </div>
+
+        <!-- Pathway 3: Corporate CSR & Industry -->
+        <div class="bg-paper border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md hover:border-navy transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-lg bg-gov text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+              <i class="fa-solid fa-building-shield"></i>
+            </div>
+            <h3 class="h-serif text-lg font-bold text-navy mb-2">Corporates &amp; CSR</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              CSR partnerships in disaster resilience, early warning technological deployments, community infrastructure reinforcement, and relief reserves.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-xs font-semibold text-gov">
+            CSR &amp; Technology
+          </div>
+        </div>
+
+        <!-- Pathway 4: NGOs & Civil Society -->
+        <div class="bg-paper border border-slate-200 p-6 flex flex-col justify-between hover:shadow-md hover:border-saffron transition-all">
+          <div>
+            <div class="w-12 h-12 rounded-lg bg-navy text-white flex items-center justify-center text-xl mb-4 shadow-sm">
+              <i class="fa-solid fa-people-roof"></i>
+            </div>
+            <h3 class="h-serif text-lg font-bold text-navy mb-2">NGOs &amp; Communities</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Community-Based Disaster Risk Management (CBDRM), grassroots volunteer training, vulnerable group protection, and rapid humanitarian relief.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200 text-xs font-semibold text-saffron-dark">
+            Community Action
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+    <!-- Partnership Proposal Form & Sidebar -->
+    <div class="grid lg:grid-cols-12 gap-8 items-start">
+
+      <!-- Form Column -->
+      <section class="lg:col-span-8 bg-white p-6 sm:p-8 md:p-10 border-t-4 border-saffron shadow-sm">
+        <div class="mb-6">
+          <span class="text-xs uppercase font-bold text-gov tracking-wider">Join Forces</span>
+          <h3 class="h-serif text-2xl font-black text-navy mt-1">Partnership Inquiry Form</h3>
+          <p class="text-sm text-slate-600 mt-1">Submit your partnership interest or proposal. Our alliance secretariat will review and schedule a discussion.</p>
+          <div class="w-16 h-1 bg-saffron mt-3"></div>
+        </div>
+
+        <form id="collabForm" class="space-y-6" onsubmit="event.preventDefault(); document.getElementById('collabSuccessModal').classList.remove('hidden');">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="orgName" class="block text-xs font-bold text-navy uppercase tracking-wider mb-2">Organization / Institution Name <span class="text-red-500">*</span></label>
+              <input type="text" id="orgName" required placeholder="e.g. National Institute of Technology / Apex CSR Foundation" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+            </div>
+            <div>
+              <label for="orgType" class="block text-xs font-bold text-navy uppercase tracking-wider mb-2">Organization Type <span class="text-red-500">*</span></label>
+              <select id="orgType" required class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+                <option value="">-- Select Organization Type --</option>
+                <option value="academic">Academic / University / Research Institute</option>
+                <option value="government">Government Department / Statutory Authority</option>
+                <option value="corporate">Corporate / CSR Foundation / Industry</option>
+                <option value="ngo">Non-Profit / NGO / Civil Society</option>
+                <option value="international">International Multilateral Agency</option>
+                <option value="media">Media &amp; Communications Organization</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="pocName" class="block text-xs font-bold text-navy uppercase tracking-wider mb-2">Contact Person Name &amp; Designation <span class="text-red-500">*</span></label>
+              <input type="text" id="pocName" required placeholder="e.g. Dr. A. K. Verma, Director (Research)" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+            </div>
+            <div>
+              <label for="pocEmail" class="block text-xs font-bold text-navy uppercase tracking-wider mb-2">Official Email Address <span class="text-red-500">*</span></label>
+              <input type="email" id="pocEmail" required placeholder="contact@organization.org" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label for="pocPhone" class="block text-xs font-bold text-navy uppercase tracking-wider mb-2">Phone / Contact Number <span class="text-red-500">*</span></label>
+              <input type="tel" id="pocPhone" required placeholder="+91 98765 43210" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+            </div>
+            <div>
+              <label for="collabArea" class="block text-xs font-bold text-navy uppercase tracking-wider mb-2">Area of Proposed Collaboration <span class="text-red-500">*</span></label>
+              <select id="collabArea" required class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors">
+                <option value="">-- Select Collaboration Area --</option>
+                <option value="wcdm">WCDM Conference Co-Hosting / Session Partner</option>
+                <option value="research">Joint DRR Research &amp; E-Book Publications</option>
+                <option value="csr">CSR Project Implementation &amp; Community Resilience</option>
+                <option value="training">Disaster Preparedness Training &amp; Capacity Building</option>
+                <option value="tech">Technology Innovation, Early Warning &amp; AI in DRR</option>
+                <option value="other">Institutional MoU &amp; Multi-Year Partnership</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label for="proposalScope" class="block text-xs font-bold text-navy uppercase tracking-wider mb-2">Collaboration Concept / Scope of Proposal <span class="text-red-500">*</span></label>
+            <textarea id="proposalScope" rows="5" required placeholder="Please describe the objective of the proposed collaboration, expected outcomes, target region or community, and how DMICS and your institution can work together..." class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov focus:bg-white transition-colors"></textarea>
+          </div>
+
+          <button type="submit" class="bg-navy hover:bg-gov text-white font-bold py-3 px-8 text-sm uppercase tracking-wider shadow transition-colors flex items-center gap-2 cursor-pointer">
+            <i class="fa-solid fa-handshake text-saffron"></i> Submit Partnership Proposal
+          </button>
+        </form>
+
+        <!-- Form Success State Modal (Demo) -->
+        <div id="collabSuccessModal" class="hidden fixed inset-0 bg-navy/80 flex items-center justify-center p-4 z-50">
+          <div class="bg-white max-w-md w-full p-8 border-t-4 border-saffron shadow-2xl text-center">
+            <div class="w-16 h-16 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-2xl mb-4">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h4 class="h-serif text-2xl font-black text-navy mb-2">Proposal Received!</h4>
+            <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+              Thank you for expressing interest in collaborating with DMICS. Our partnership division will review your proposal and get in touch with your team shortly.
+            </p>
+            <button onclick="document.getElementById('collabSuccessModal').classList.add('hidden'); document.getElementById('collabForm').reset();" class="bg-navy hover:bg-gov text-white font-bold px-6 py-2.5 text-sm uppercase tracking-wider transition-colors cursor-pointer">
+              Close
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="lg:col-span-4 space-y-6">
+
+        <!-- Proven Convergence Track Record -->
+        <div class="bg-white p-6 border-t-4 border-navy shadow-sm">
+          <h4 class="h-serif text-lg font-bold text-navy mb-3">Our Alliance Network</h4>
+          <div class="w-12 h-1 bg-saffron mb-4"></div>
+          <p class="text-xs text-slate-600 leading-relaxed mb-4">
+            Since 2005, DMICS has fostered collaborative bridges with international agencies and premier Indian national institutions to advance disaster resilience.
+          </p>
+          <div class="space-y-3">
+            <a href="national-collaborations.html" class="block p-3 bg-paper hover:bg-gov hover:text-white border border-slate-200 text-xs font-semibold text-navy transition-all">
+              <i class="fa-solid fa-building-columns text-saffron mr-2"></i> View 12 National Collaborations &rarr;
+            </a>
+            <a href="international-collaborations.html" class="block p-3 bg-paper hover:bg-gov hover:text-white border border-slate-200 text-xs font-semibold text-navy transition-all">
+              <i class="fa-solid fa-globe text-saffron mr-2"></i> View International Collaborations &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Partnership Secretariat Contact -->
+        <div class="bg-navy text-white p-6 border-t-4 border-saffron shadow-sm">
+          <h4 class="h-serif text-lg font-bold mb-2">Partnership Secretariat</h4>
+          <p class="text-xs text-slate-300 mb-4 leading-relaxed">
+            For institutional MoUs, official delegations, and high-level collaboration proposals:
+          </p>
+          <div class="space-y-3 text-sm">
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-saffron"></i>
+              <a href="mailto:dmics.india@gmail.com" class="hover:text-saffron transition-colors">dmics.india@gmail.com</a>
+            </div>
+            <div class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-saffron"></i>
+              <span>+91 99081 29288</span>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-saffron mt-1"></i>
+              <span class="text-xs text-slate-300">DMICS Secretariat, Hyderabad / New Delhi, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Engagement Links -->
+        <div class="bg-white p-6 border border-slate-200 shadow-sm">
+          <h4 class="h-serif text-base font-bold text-navy mb-3">Other Ways to Engage</h4>
+          <ul class="divide-y divide-slate-100 text-sm">
+            <li>
+              <a href="volunteer.html" class="py-2.5 flex items-center justify-between text-gov hover:text-saffron font-semibold">
+                <span>Volunteer With Us</span>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </a>
+            </li>
+            <li>
+              <a href="workwithus.html" class="py-2.5 flex items-center justify-between text-gov hover:text-saffron font-semibold">
+                <span>Work with Us</span>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </a>
+            </li>
+            <li>
+              <a href="contact-us.html" class="py-2.5 flex items-center justify-between text-gov hover:text-saffron font-semibold">
+                <span>Contact Secretariat</span>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy-dark text-slate-300 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS" class="h-16 bg-white p-1 mb-4">
+      <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+        Disaster Management Initiatives and Convergence Society (DMICS) is a registered society committed to advancing disaster risk reduction, scientific convergence, community resilience, and climate change adaptation across the globe.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Quick Links</h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="about-us.html" class="hover:text-saffron">About Us</a></li>
+        <li><a href="vision.html" class="hover:text-saffron">Vision &amp; Mission</a></li>
+        <li><a href="milestone.html" class="hover:text-saffron">Our Journey</a></li>
+        <li><a href="events.html" class="hover:text-saffron">Events &amp; Conferences</a></li>
+        <li><a href="reports.html" class="hover:text-saffron">Publications &amp; Reports</a></li>
+        <li><a href="wcdm-drr-awards-2025.html" class="hover:text-saffron">WCDM DRR Awards 2025</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Contact</h4>
+      <div class="text-xs space-y-2 text-slate-400">
+        <p><i class="fa-solid fa-location-dot text-saffron mr-2"></i> DMICS Secretariat, Hyderabad / New Delhi, India</p>
+        <p><i class="fa-solid fa-envelope text-saffron mr-2"></i> dmics.india@gmail.com</p>
+        <p><i class="fa-solid fa-phone text-saffron mr-2"></i> +91 99081 29288</p>
+      </div>
+    </div>
+  </div>
+  <div class="bg-black/40 py-4 text-center text-xs text-slate-500 border-t border-navy-light/30">
+    &copy; 2026 Disaster Management Initiatives and Convergence Society (DMICS). All rights reserved.
+  </div>
+</footer>
+
+<script>
+  const btn = document.getElementById('menuBtn');
+  const menu = document.getElementById('menu');
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>
