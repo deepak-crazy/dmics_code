@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DMICS: Disaster Management Initiatives and Convergence Society</title>
+<meta name="description" content="DMICS is a civil society initiative established in 2005, serving as a convergence society for decision makers, practitioners and experts on Disaster Risk Reduction.">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style type="text/tailwindcss">
+@theme {
+  --color-navy: #0b2a4a;
+  --color-navy-dark: #071c33;
+  --color-gov: #1f5f99;
+  --color-saffron: #e07b00;
+  --color-paper: #f4f6f9;
+  --font-serif: "Merriweather", Georgia, serif;
+  --font-sans: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); }
+.h-serif { font-family: var(--font-serif); }
+.dd { display:none; }
+.has-dd:hover > .dd, .has-dd:focus-within > .dd { display:block; }
+.slide { opacity:0; transition: opacity .8s; position:absolute; inset:0; }
+.slide.on { opacity:1; }
+.ticker { animation: tick 28s linear infinite; white-space:nowrap; display:inline-block; padding-left:100%; }
+@keyframes tick { to { transform: translateX(-100%); } }
+</style>
+</head>
+<body class="bg-white text-slate-800">
+
+<!-- Top utility bar -->
+<div class="bg-navy-dark text-slate-200 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+    <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+      <span><i class="fa-solid fa-phone mr-1.5 text-saffron"></i><a href="tel:+917893222289">+91-7893222289</a>, <a href="tel:+917893020209">+91-7893020209</a></span>
+      <a href="mailto:dmics.future@gmail.com"><i class="fa-solid fa-envelope mr-1.5 text-saffron"></i>dmics.future@gmail.com</a>
+      <span class="hidden lg:inline"><i class="fa-solid fa-location-dot mr-1.5 text-saffron"></i>Road No: 7, Banjara Hills, Hyderabad - 500034, India</span>
+    </div>
+    <div class="flex items-center gap-4 text-base">
+      <a href="https://www.facebook.com/5thWCDM2021" aria-label="Facebook" class="hover:text-saffron"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://twitter.com/5thWCDM2021" aria-label="X / Twitter" class="hover:text-saffron"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/disaster-management-dmics/?viewAsMember=true" aria-label="LinkedIn" class="hover:text-saffron"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS logo" class="h-16 md:h-20 w-auto">
+      <div class="hidden sm:block">
+        <div class="h-serif text-navy text-lg md:text-2xl font-black leading-tight">Disaster Management Initiatives<br>and Convergence Society</div>
+        <div class="text-xs md:text-sm text-slate-500 tracking-wide uppercase mt-1">Est. 2005 &middot; Registered under the Societies Registration Act, Govt. of Andhra Pradesh</div>
+      </div>
+    </a>
+    <img src="https://www.dmics.org/assests/images/WCDM-Logo.png" alt="WCDM logo" class="h-16 md:h-20 w-auto">
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[15px] font-semibold">
+      <li><a href="index.html" class="block px-4 py-3.5 bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-4 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="about-us.html">About us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li></ul></li>
+      <li><a href="milestone.html" class="block px-4 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-4 py-3.5 hover:bg-gov">Events</a></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li></ul></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="reports.html">Reports / Publications</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Media</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li></ul></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Collaborations <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="international-collaborations.html">International Collaboration</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="national-collaborations.html">National Collaboration</a></li></ul></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="collaborate.html">Collaborate with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="contact-us.html">Contact Us</a></li></ul></li>
+      <li><a href="Gallery.html" class="block px-4 py-3.5 hover:bg-gov">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Flash news -->
+<div class="bg-saffron text-white">
+  <div class="max-w-7xl mx-auto flex items-stretch">
+    <div class="bg-navy-dark px-4 py-2 font-bold uppercase text-sm flex items-center gap-2 shrink-0"><i class="fa-solid fa-bullhorn"></i> Flash News</div>
+    <div class="overflow-hidden flex-1 py-2 text-[15px] font-semibold"><span class="ticker">Upcoming Conference: Global Dialogue on Climate Change Adaptation and Disaster Risk Reduction (GDCCA &amp; DRR) - 3 to 6 June 2026, New Delhi</span></div>
+  </div>
+</div>
+
+<!-- Hero slider -->
+<section class="relative h-[300px] sm:h-[420px] lg:h-[520px] bg-navy-dark overflow-hidden" id="hero">
+  <div class="slide on"><img src="https://www.dmics.org/assests/WCDMDRR/homebanner.jpg" alt="" class="w-full h-full object-cover"></div>
+  <div class="slide"><img src="https://www.dmics.org/assests/new-images/banner-images/Goa_meeting.jpg" alt="Goa meeting" class="w-full h-full object-cover"></div>
+  <div class="slide"><img src="https://www.dmics.org/assests/images/08-09-2022/DMICS-new-Knowledge partner-Bennett-University-in-Delhi2.jpg" alt="Knowledge partner Bennett University" class="w-full h-full object-cover"></div>
+  <div class="slide"><img src="https://www.dmics.org/assests/images/hmbanner-1.JPG" alt="" class="w-full h-full object-cover"></div>
+  <div class="slide"><img src="https://www.dmics.org/assests/images/hmbanner-2.JPG" alt="" class="w-full h-full object-cover"></div>
+  <div class="slide"><img src="https://www.dmics.org/assests/images/hmbanner-3.JPG" alt="" class="w-full h-full object-cover"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-navy-dark/90 via-navy-dark/20 to-transparent"></div>
+  <div class="absolute bottom-0 left-0 right-0 max-w-7xl mx-auto px-4 pb-8 sm:pb-12 text-white">
+    <p class="uppercase tracking-widest text-saffron font-bold text-sm mb-2">Civil Society Initiative &middot; Since 2005</p>
+    <h1 class="h-serif text-2xl sm:text-4xl lg:text-5xl font-black max-w-3xl leading-tight">Building resilient communities through disaster risk reduction</h1>
+    <a href="https://dmics.org/photo-gallery.html" class="inline-flex items-center gap-2 mt-5 bg-saffron hover:bg-amber-600 px-6 py-3 font-bold">Know More <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+  <button id="prev" class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-saffron text-white w-10 h-10" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+  <button id="next" class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-saffron text-white w-10 h-10" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+</section>
+
+<!-- Quick links -->
+<section class="bg-navy">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 text-white text-center font-bold">
+    <a href="Gallery.html" class="py-5 border-r border-white/10 hover:bg-gov"><i class="fa-solid fa-images text-2xl text-saffron block mb-1"></i>Gallery</a>
+    <a href="news.html" class="py-5 md:border-r border-white/10 hover:bg-gov"><i class="fa-solid fa-newspaper text-2xl text-saffron block mb-1"></i>Disaster News</a>
+    <a href="events.html" class="py-5 border-r border-white/10 hover:bg-gov"><i class="fa-solid fa-calendar-days text-2xl text-saffron block mb-1"></i>Events</a>
+    <a href="ourpresence.html" class="py-5 hover:bg-gov"><i class="fa-solid fa-earth-asia text-2xl text-saffron block mb-1"></i>Our Presence</a>
+  </div>
+</section>
+
+<!-- About + Latest events / Notices -->
+<section class="bg-paper py-14">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-3 gap-8">
+    <div class="lg:col-span-2 bg-white p-8 border-t-4 border-navy shadow-sm">
+      <h2 class="h-serif text-3xl font-black text-navy mb-1">About Us</h2>
+      <div class="w-16 h-1 bg-saffron mb-6"></div>
+      <div class="space-y-4 leading-relaxed text-slate-700">
+        <p>The Disaster Management Initiatives and Convergence Society (DMICS) is a leading civil society organization established in 2005. Originally known as the Disaster Management Infrastructure and Control Society, DMICS has evolved from its early role as a think tank into a dynamic, community-centric organization focused on inclusive and sustainable disaster risk reduction (DRR).</p>
+        <p>Registered under the Societies Registration Act of the Government of Andhra Pradesh, DMICS functions as a pivotal platform bringing together decision-makers, practitioners, policymakers, researchers, and subject matter experts to foster dialogue, collaboration, and innovation in the field of Disaster Risk Reduction and Management.</p>
+        <p>The organization is dedicated to initiating and promoting innovative practices, ideas, and projects aimed at enhancing community resilience. DMICS organizes global events, knowledge exchanges, and conferences on disaster management, with a strong emphasis on sharing best practices, success stories, and indigenous knowledge systems that centre on safeguarding the well-being of communities from both natural and human-induced disasters.</p>
+      </div>
+      <a href="about-us.html" class="inline-flex items-center gap-2 mt-6 bg-navy hover:bg-gov text-white px-5 py-2.5 font-bold">Know more <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
+    <aside class="space-y-6">
+      <div class="bg-white shadow-sm border-t-4 border-saffron">
+        <h3 class="bg-navy text-white px-5 py-3 font-bold uppercase text-sm tracking-wide"><i class="fa-solid fa-bullhorn mr-2 text-saffron"></i>Latest Events</h3>
+        <a href="https://gdccadrr.dmics.org/" class="block p-5 hover:bg-paper">
+          <span class="inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 mb-2">NEW</span>
+          <p class="font-semibold text-navy">Upcoming Conference: Global Dialogue on Climate Change Adaptation and Disaster Risk Reduction (GDCCA &amp; DRR) &mdash; 3&ndash;6 June 2026, New Delhi</p>
+        </a>
+      </div>
+      <div class="bg-white shadow-sm border-t-4 border-saffron">
+        <h3 class="bg-navy text-white px-5 py-3 font-bold uppercase text-sm tracking-wide"><i class="fa-solid fa-clipboard-list mr-2 text-saffron"></i>Notices</h3>
+        <ul class="divide-y divide-slate-200 text-sm">
+          <li class="p-4"><a href="#" class="font-semibold text-navy hover:underline">Last date for submission of abstracts</a><div class="text-slate-500 mt-1"><i class="fa-regular fa-calendar mr-1"></i>January 10, 2026</div></li>
+          <li class="p-4"><a href="#" class="font-semibold text-navy hover:underline">Last date for intimation of acceptance of abstracts</a><div class="text-slate-500 mt-1"><i class="fa-regular fa-calendar mr-1"></i>January 20, 2026</div></li>
+          <li class="p-4"><a href="#" class="font-semibold text-navy hover:underline">Last date for submission of full-length papers</a><div class="text-slate-500 mt-1"><i class="fa-regular fa-calendar mr-1"></i>February 20, 2026</div></li>
+          <li class="p-4"><a href="#" class="font-semibold text-navy hover:underline">Acceptance of full-length papers for publication</a><div class="text-slate-500 mt-1"><i class="fa-regular fa-calendar mr-1"></i>February 28, 2026</div></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- Congress highlights / GDCCA -->
+<section class="bg-navy text-white py-14">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="h-serif text-3xl font-black mb-1">Congress Highlights</h2>
+      <div class="w-16 h-1 bg-saffron mb-8"></div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div class="bg-white/10 p-5 text-center"><i class="fa-solid fa-users text-2xl text-saffron"></i><div class="text-3xl font-black my-1">&mdash;</div><div class="text-sm">Participants (globally)</div></div>
+        <div class="bg-white/10 p-5 text-center"><i class="fa-solid fa-user-tie text-2xl text-saffron"></i><div class="text-3xl font-black my-1">&mdash;</div><div class="text-sm">Experts</div></div>
+        <div class="bg-white/10 p-5 text-center"><i class="fa-solid fa-file-lines text-2xl text-saffron"></i><div class="text-3xl font-black my-1">&mdash;</div><div class="text-sm">Paper Presentations</div></div>
+        <div class="bg-white/10 p-5 text-center"><i class="fa-solid fa-chalkboard text-2xl text-saffron"></i><div class="text-3xl font-black my-1">&mdash;</div><div class="text-sm">Poster Presentations</div></div>
+        <div class="bg-white/10 p-5 text-center"><i class="fa-solid fa-microphone-lines text-2xl text-saffron"></i><div class="text-3xl font-black my-1">&mdash;</div><div class="text-sm">Technical Sessions</div></div>
+      </div>
+    </div>
+    <div class="bg-white p-3 text-slate-800 shadow-2xl">
+      <a href="https://gdccadrr.dmics.org/"><img src="https://www.dmics.org/img/gdcaa2026.jpg" alt="GDCCA & DRR 2026" class="w-full"></a>
+      <div class="flex flex-wrap items-center justify-between gap-3 p-3">
+        <a href="https://gdccadrr.dmics.org/" class="font-semibold text-navy hover:underline"><i class="fa-solid fa-globe mr-1"></i>gdccadrr.dmics.org</a>
+        <a href="https://gdccadrr.dmics.org/img/brochure.pdf" class="bg-saffron hover:bg-amber-600 text-white font-bold px-4 py-2"><i class="fa-solid fa-file-pdf mr-1"></i>Download Brochure</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Focus areas -->
+<section class="py-14 bg-white">
+  <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-5 gap-10">
+    <div class="lg:col-span-3">
+      <h2 class="h-serif text-3xl font-black text-navy mb-1">Focus Areas</h2>
+      <div class="w-16 h-1 bg-saffron mb-6"></div>
+      <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-3 text-[15px]">
+        <li class="flex gap-3"><i class="fa-solid fa-shield-halved text-gov mt-1"></i>Disaster Risk Reduction and Preparedness</li>
+        <li class="flex gap-3"><i class="fa-solid fa-cloud-sun-rain text-gov mt-1"></i>Climate Change Adaptation (CCA)</li>
+        <li class="flex gap-3"><i class="fa-solid fa-people-roof text-gov mt-1"></i>Community Resilience Building</li>
+        <li class="flex gap-3"><i class="fa-solid fa-bell text-gov mt-1"></i>Early Warning Systems</li>
+        <li class="flex gap-3"><i class="fa-solid fa-graduation-cap text-gov mt-1"></i>Capacity Building and Training</li>
+        <li class="flex gap-3"><i class="fa-solid fa-truck-medical text-gov mt-1"></i>Emergency Response and Recovery</li>
+        <li class="flex gap-3"><i class="fa-solid fa-city text-gov mt-1"></i>Urban Risk Management</li>
+        <li class="flex gap-3"><i class="fa-solid fa-heart-pulse text-gov mt-1"></i>Health and Disaster Risk</li>
+        <li class="flex gap-3"><i class="fa-solid fa-hands-holding-circle text-gov mt-1"></i>Youth and Community Engagement</li>
+        <li class="flex gap-3"><i class="fa-solid fa-scale-balanced text-gov mt-1"></i>Policy Advocacy and Governance</li>
+        <li class="flex gap-3"><i class="fa-solid fa-microchip text-gov mt-1"></i>Technology and Innovation in Disaster Management</li>
+        <li class="flex gap-3"><i class="fa-solid fa-seedling text-gov mt-1"></i>Sustainable Livelihoods Post-Disasters</li>
+        <li class="flex gap-3"><i class="fa-solid fa-universal-access text-gov mt-1"></i>Inclusive Disaster Risk Management (for women, children, elderly, and persons with disabilities)</li>
+        <li class="flex gap-3"><i class="fa-solid fa-tree text-gov mt-1"></i>Nature-based Solutions (NbS) for Disaster Risk Reduction (DRR)</li>
+      </ul>
+    </div>
+    <div class="lg:col-span-2"><img src="https://dmics.org/img/focus.jpg" alt="Focus areas" class="w-full border-8 border-paper shadow"></div>
+  </div>
+</section>
+
+<!-- World Congress -->
+<section class="bg-paper py-14">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="h-serif text-3xl font-black text-navy mb-1">World Congress on Disaster Management</h2>
+    <div class="w-16 h-1 bg-saffron mb-8"></div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article class="bg-white border-t-4 border-navy shadow-sm p-6 flex flex-col">
+        <span class="text-saffron font-bold text-sm uppercase">World Congress #1</span>
+        <h3 class="h-serif font-black text-navy text-xl mb-1">Highlights</h3>
+        <p class="text-xs text-slate-500 mb-3"><i class="fa-solid fa-location-dot"></i> Hyderabad &middot; 21&ndash;24 October 2008</p>
+        <p class="text-sm leading-relaxed text-slate-700 flex-1">DMICS organized a historical World Congress on Disaster Management (WCDM) from 21st to 24th October, 2008 in Hyderabad, India. The Global Congress was the first of its kind in the country. The objective of this congress was to network National and International Resources and expertise, bring them to a common platform for effective and efficient disaster management. Bharat Ratna, His Excellency Dr. A.P.J. Abdul Kalam, Former President of India, was the Chief Guest and delivered the inaugural address. Gen. N.C Vij, the then Hon'ble Vice Chairman NDMA, Ministry of Home Affairs, Govt. of India, delivered the key note address. Government of India (GoI), National Disaster Management Authority (NDMA) and Government of Andhra Pradesh were the co hosts of the First World Congress on Disaster Management.</p>
+        <a href="first-world-congress-ondisaster.html" class="mt-4 font-bold text-gov hover:underline">Read more... <i class="fa-solid fa-angles-right"></i></a>
+      </article>
+      <article class="bg-white border-t-4 border-navy shadow-sm p-6 flex flex-col">
+        <span class="text-saffron font-bold text-sm uppercase">World Congress #2</span>
+        <h3 class="h-serif font-black text-navy text-xl mb-1">Highlights</h3>
+        <p class="text-xs text-slate-500 mb-3"><i class="fa-solid fa-location-dot"></i> Visakhapatnam &middot; 19&ndash;22 November 2015</p>
+        <p class="text-sm leading-relaxed text-slate-700 flex-1">The Second World Congress on Disaster Management was held in Visakhapatnam from 19th -22nd November, 2015 and approximately thousand disaster management professionals, practitioners comprising of researchers, academicians, defense service personnel, Central &amp; State Govt. authorities, NGOs, multilateral organizations, media, private sector and all other stakeholders working on Disaster Management participated. Inaugurating the Congress the Hon'ble CM stated that it made perfect sense to host this important congress in the city of Visakhapatnam. The State of Andhra Pradesh as a whole has been vulnerable to natural hazards and cyclones. The Chief Guest, Shri M. Venkaiah Naidu, Union Minister for Urban Development, Parliamentary Affairs, Government of India, felt happy to note that the Second World Congress on Disaster Management has brought together experts.</p>
+        <a href="second-world-congress-ondisaster.html" class="mt-4 font-bold text-gov hover:underline">Read more.. <i class="fa-solid fa-angles-right"></i></a>
+      </article>
+      <article class="bg-white border-t-4 border-navy shadow-sm p-6 flex flex-col">
+        <span class="text-saffron font-bold text-sm uppercase">World Congress #3</span>
+        <h3 class="h-serif font-black text-navy text-xl mb-1">Highlights</h3>
+        <p class="text-xs text-slate-500 mb-3"><i class="fa-solid fa-location-dot"></i> Visakhapatnam &middot; 6&ndash;10 November 2017</p>
+        <p class="text-sm leading-relaxed text-slate-700 flex-1">DMICS is going to organize a historical World Congress on Disaster Management (WCDM) from 6th to 10th November, 2017 in Vishakapatnam, Andhra Pradesh, India. Our Honorable Chief Minister of AP Dr.Chandrababu Naidu garu is the chief guest for this World Congress event. This World Congress include 8 Plenaries, 18 Parallel Sessions, 150 Speakers, 100 Countries, 2000 Delegates, UN Organisations, Regional Bodies, Eminent Scientists, Senior Policy Makers, Professionals, Administrators, Scientific Bodies, Academic Institutions.</p>
+        <a href="https://www.wcdm.co.in/" class="mt-4 font-bold text-gov hover:underline">Read more.. <i class="fa-solid fa-angles-right"></i></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="py-14 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-end justify-between mb-8">
+      <div><h2 class="h-serif text-3xl font-black text-navy mb-1">Gallery</h2><div class="w-16 h-1 bg-saffron"></div></div>
+      <a href="Gallery.html" class="font-bold text-gov hover:underline">View all <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <img class="w-full h-44 object-cover hover:opacity-80" src="https://www.dmics.org/assests/images/28-06-2022/_DSC0332.JPG" alt="DMICS">
+      <img class="w-full h-44 object-cover hover:opacity-80" src="https://www.dmics.org/assests/images/28-06-2022/_DSC0509.JPG" alt="">
+      <img class="w-full h-44 object-cover hover:opacity-80" src="https://www.dmics.org/assests/images/28-06-2022/IMG_8409.JPG" alt="">
+      <img class="w-full h-44 object-cover hover:opacity-80" src="https://www.dmics.org/assests/images/28-06-2022/_DSC0545.JPG" alt="">
+      <img class="w-full h-44 object-cover hover:opacity-80" src="https://www.dmics.org/assests/images/gallery-1.JPG" alt="">
+      <img class="w-full h-44 object-cover hover:opacity-80" src="https://www.dmics.org/assests/images/gallery-2.JPG" alt="">
+      <img class="w-full h-44 object-cover hover:opacity-80" src="https://www.dmics.org/assests/images/gallery-3.JPG" alt="">
+      <img class="w-full h-44 object-cover hover:opacity-80" src="https://www.dmics.org/assests/images/gallery-4.JPG" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- Collaborations -->
+<section class="bg-paper py-12 border-y border-slate-200">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="h-serif text-3xl font-black text-navy mb-1">Collaborations</h2>
+    <div class="w-16 h-1 bg-saffron mb-8"></div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 items-center">
+      <div class="bg-white p-4 h-24 flex items-center justify-center"><img class="max-h-full" src="https://www.dmics.org/assests/images/associationuniversities.jpg" alt="Association of Universities"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center"><img class="max-h-full" src="https://www.dmics.org/assests/images/AU_logo.jpg" alt="Andhra University"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center"><img class="max-h-full" src="https://www.dmics.org/assests/images/ecil.jpg" alt="ECIL"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center"><img class="max-h-full" src="https://www.dmics.org/assests/images/INCOIS_Logo.png" alt="INCOIS"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center"><img class="max-h-full" src="https://www.dmics.org/assests/images/jnu_logo.png" alt="JNU"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center"><img class="max-h-full" src="https://www.dmics.org/assests/images/NAPSIPAG.png" alt="NAPSIPAG"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center"><img class="max-h-full" src="https://www.dmics.org/assests/images/unicef_logo%20(1).gif" alt="UNICEF"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy-dark text-slate-300 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS" class="h-16 bg-white p-1 mb-4">
+      <p class="leading-relaxed max-w-md">Disaster Management Initiatives and Convergence Society &mdash; a convergence society for decision makers, practitioners and experts on Disaster Risk Reduction. Registered under the Societies Registration Act, Government of Andhra Pradesh.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase mb-3 tracking-wide">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a class="hover:text-saffron" href="about-us.html">About us</a></li>
+        <li><a class="hover:text-saffron" href="events.html">Events</a></li>
+        <li><a class="hover:text-saffron" href="reports.html">Reports / Publications</a></li>
+        <li><a class="hover:text-saffron" href="volunteer.html">Volunteer</a></li>
+        <li><a class="hover:text-saffron" href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase mb-3 tracking-wide">Contact</h4>
+      <ul class="space-y-2">
+        <li><i class="fa-solid fa-location-dot w-5 text-saffron"></i>Road No: 7, Banjara Hills, Hyderabad - 500034, India</li>
+        <li><i class="fa-solid fa-phone w-5 text-saffron"></i>+91-7893222289, +91-7893020209</li>
+        <li><i class="fa-solid fa-envelope w-5 text-saffron"></i>dmics.future@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-xs">&copy; DMICS. All rights reserved. &middot; Redesign preview</div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').onclick = () => document.getElementById('menu').classList.toggle('hidden');
+  const slides = document.querySelectorAll('#hero .slide'); let i = 0;
+  const go = n => { slides[i].classList.remove('on'); i = (n + slides.length) % slides.length; slides[i].classList.add('on'); };
+  document.getElementById('next').onclick = () => go(i + 1);
+  document.getElementById('prev').onclick = () => go(i - 1);
+  setInterval(() => go(i + 1), 5000);
+</script>
+</body>
+</html>

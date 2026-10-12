@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reports &amp; Publications | DMICS</title>
+<meta name="description" content="Access official DMICS and World Congress on Disaster Management (WCDM) reports, e-books, and research publications on disaster risk reduction and climate resilience.">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style type="text/tailwindcss">
+@theme {
+  --color-navy: #0b2a4a;
+  --color-navy-dark: #071c33;
+  --color-gov: #1f5f99;
+  --color-saffron: #e07b00;
+  --color-paper: #f4f6f9;
+  --font-serif: "Merriweather", Georgia, serif;
+  --font-sans: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); }
+.h-serif { font-family: var(--font-serif); }
+.dd { display:none; }
+.has-dd:hover > .dd, .has-dd:focus-within > .dd { display:block; }
+.ticker { animation: tick 28s linear infinite; white-space:nowrap; display:inline-block; padding-left:100%; }
+@keyframes tick { to { transform: translateX(-100%); } }
+</style>
+</head>
+<body class="bg-white text-slate-800">
+
+<!-- Top utility bar -->
+<div class="bg-navy-dark text-slate-200 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+    <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+      <span><i class="fa-solid fa-phone mr-1.5 text-saffron"></i><a href="tel:+917893222289">+91-7893222289</a>, <a href="tel:+917893020209">+91-7893020209</a></span>
+      <a href="mailto:dmics.future@gmail.com"><i class="fa-solid fa-envelope mr-1.5 text-saffron"></i>dmics.future@gmail.com</a>
+      <span class="hidden lg:inline"><i class="fa-solid fa-location-dot mr-1.5 text-saffron"></i>Road No: 7, Banjara Hills, Hyderabad - 500034, India</span>
+    </div>
+    <div class="flex items-center gap-4 text-base">
+      <a href="https://www.facebook.com/5thWCDM2021" aria-label="Facebook" class="hover:text-saffron"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://twitter.com/5thWCDM2021" aria-label="X / Twitter" class="hover:text-saffron"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/disaster-management-dmics/?viewAsMember=true" aria-label="LinkedIn" class="hover:text-saffron"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS logo" class="h-16 md:h-20 w-auto">
+      <div class="hidden sm:block">
+        <div class="h-serif text-navy text-lg md:text-2xl font-black leading-tight">Disaster Management Initiatives<br>and Convergence Society</div>
+        <div class="text-xs md:text-sm text-slate-500 tracking-wide uppercase mt-1">Est. 2005 &middot; Registered under the Societies Registration Act, Govt. of Andhra Pradesh</div>
+      </div>
+    </a>
+    <img src="https://www.dmics.org/assests/images/WCDM-Logo.png" alt="WCDM logo" class="h-16 md:h-20 w-auto">
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[15px] font-semibold">
+      <li><a href="index.html" class="block px-4 py-3.5 hover:bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-4 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="about-us.html">About us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li></ul></li>
+      <li><a href="milestone.html" class="block px-4 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-4 py-3.5 hover:bg-gov">Events</a></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li></ul></li>
+      <li class="has-dd relative"><a href="reports.html" class="block px-4 py-3.5 bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 bg-paper font-semibold text-gov" href="reports.html">Reports / Publications</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Media</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li></ul></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Collaborations <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="international-collaborations.html">International Collaboration</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="national-collaborations.html">National Collaboration</a></li></ul></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="collaborate.html">Collaborate with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="contact-us.html">Contact Us</a></li></ul></li>
+      <li><a href="Gallery.html" class="block px-4 py-3.5 hover:bg-gov">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Flash news -->
+<div class="bg-saffron text-white">
+  <div class="max-w-7xl mx-auto flex items-stretch">
+    <div class="bg-navy-dark px-4 py-2 font-bold uppercase text-sm flex items-center gap-2 shrink-0"><i class="fa-solid fa-bullhorn"></i> Flash News</div>
+    <div class="overflow-hidden flex-1 py-2 text-[15px] font-semibold"><span class="ticker">Upcoming Conference: Global Dialogue on Climate Change Adaptation and Disaster Risk Reduction (GDCCA &amp; DRR) - 3 to 6 June 2026, New Delhi</span></div>
+  </div>
+</div>
+
+<!-- Page Banner / Header Breadcrumb -->
+<section class="bg-gradient-to-r from-navy-dark via-navy to-gov text-white py-12 border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-slate-300 mb-3" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-house text-xs"></i> Home</a>
+      <span class="text-slate-400">/</span>
+      <span class="text-slate-400">Resources</span>
+      <span class="text-slate-400">/</span>
+      <span class="text-saffron font-semibold">Reports / Publications</span>
+    </nav>
+    <h1 class="h-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">Reports / Publications</h1>
+    <div class="w-20 h-1 bg-saffron mt-3"></div>
+  </div>
+</section>
+
+<!-- Main Content Area -->
+<main class="bg-paper py-12">
+  <div class="max-w-7xl mx-auto px-4 space-y-12">
+
+    <!-- Section 1: 3rd & 4th WCDM Publications -->
+    <section>
+      <div class="mb-6">
+        <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy mb-1">WCDM e-Books &amp; Proceedings</h2>
+        <div class="w-16 h-1 bg-saffron"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- 3rd WCDM e-Book -->
+        <article class="bg-white border-t-4 border-navy shadow-sm p-5 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="text-center">
+            <a href="https://www.dmics.org/img/3rd-WCDM-Ebook.pdf" target="_blank" rel="noopener noreferrer" class="block overflow-hidden border border-slate-200 bg-slate-50 mb-4 group">
+              <img src="https://www.dmics.org/img/pub_3rd-WCDM-Ebook.jpg" alt="3rd WCDM e-Book" class="w-full h-64 object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <span class="bg-paper text-navy text-xs font-bold px-2.5 py-1 uppercase border border-slate-200">3rd WCDM</span>
+            <h3 class="h-serif font-black text-navy text-lg mt-3 mb-2">3<sup>rd</sup> WCDM e-Book</h3>
+          </div>
+          <a href="https://www.dmics.org/img/3rd-WCDM-Ebook.pdf" target="_blank" rel="noopener noreferrer" class="mt-4 bg-navy hover:bg-gov text-white font-bold text-sm py-2.5 px-4 text-center inline-flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-pdf text-saffron"></i> Download PDF
+          </a>
+        </article>
+
+        <!-- 4th WCDM Volume I -->
+        <article class="bg-white border-t-4 border-saffron shadow-sm p-5 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="text-center">
+            <a href="https://www.dmics.org/img/4th_WCDM_Ebook_Vol-1.pdf" target="_blank" rel="noopener noreferrer" class="block overflow-hidden border border-slate-200 bg-slate-50 mb-4 group">
+              <img src="https://www.dmics.org/img/pub_4th_WCDM_Ebook_Vol-1.jpg" alt="Volume I 4th WCDM e-Book" class="w-full h-64 object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <span class="bg-paper text-navy text-xs font-bold px-2.5 py-1 uppercase border border-slate-200">4th WCDM &bull; Vol I</span>
+            <h3 class="h-serif font-black text-navy text-lg mt-3 mb-2">Volume - I <br>4<sup>th</sup> WCDM e-Book</h3>
+          </div>
+          <a href="https://www.dmics.org/img/4th_WCDM_Ebook_Vol-1.pdf" target="_blank" rel="noopener noreferrer" class="mt-4 bg-saffron hover:bg-amber-600 text-white font-bold text-sm py-2.5 px-4 text-center inline-flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-pdf"></i> Download PDF
+          </a>
+        </article>
+
+        <!-- 4th WCDM Volume II -->
+        <article class="bg-white border-t-4 border-navy shadow-sm p-5 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="text-center">
+            <a href="https://www.dmics.org/img/4th_WCDM_Ebook_Vol-2.pdf" target="_blank" rel="noopener noreferrer" class="block overflow-hidden border border-slate-200 bg-slate-50 mb-4 group">
+              <img src="https://www.dmics.org/img/pub_4th_WCDM_Ebook_Vol-1.jpg" alt="Volume II 4th WCDM e-Book" class="w-full h-64 object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <span class="bg-paper text-navy text-xs font-bold px-2.5 py-1 uppercase border border-slate-200">4th WCDM &bull; Vol II</span>
+            <h3 class="h-serif font-black text-navy text-lg mt-3 mb-2">Volume - II <br>4<sup>th</sup> WCDM e-Book</h3>
+          </div>
+          <a href="https://www.dmics.org/img/4th_WCDM_Ebook_Vol-2.pdf" target="_blank" rel="noopener noreferrer" class="mt-4 bg-navy hover:bg-gov text-white font-bold text-sm py-2.5 px-4 text-center inline-flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-pdf text-saffron"></i> Download PDF
+          </a>
+        </article>
+
+        <!-- 4th WCDM Volume III -->
+        <article class="bg-white border-t-4 border-saffron shadow-sm p-5 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="text-center">
+            <a href="https://www.dmics.org/img/4th_WCDM_Ebook_Vol-3.pdf" target="_blank" rel="noopener noreferrer" class="block overflow-hidden border border-slate-200 bg-slate-50 mb-4 group">
+              <img src="https://www.dmics.org/img/pub_4th_WCDM_Ebook_Vol-1.jpg" alt="Volume III 4th WCDM e-Book" class="w-full h-64 object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <span class="bg-paper text-navy text-xs font-bold px-2.5 py-1 uppercase border border-slate-200">4th WCDM &bull; Vol III</span>
+            <h3 class="h-serif font-black text-navy text-lg mt-3 mb-2">Volume - III <br>4<sup>th</sup> WCDM e-Book</h3>
+          </div>
+          <a href="https://www.dmics.org/img/4th_WCDM_Ebook_Vol-3.pdf" target="_blank" rel="noopener noreferrer" class="mt-4 bg-saffron hover:bg-amber-600 text-white font-bold text-sm py-2.5 px-4 text-center inline-flex items-center justify-center gap-2">
+            <i class="fa-solid fa-file-pdf"></i> Download PDF
+          </a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Section 2: 5th & 6th WCDM Publications -->
+    <section>
+      <div class="mb-6">
+        <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy mb-1">5th &amp; 6th WCDM Research Volumes</h2>
+        <div class="w-16 h-1 bg-saffron"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- 6th WCDM: Climate Crisis -->
+        <article class="bg-white border-t-4 border-saffron shadow-sm p-6 sm:col-span-2 lg:col-span-1 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div class="text-center">
+            <a href="https://www.dmics.org/img/ClimateCrisisandSustainableSolutions.pdf" target="_blank" rel="noopener noreferrer" class="block overflow-hidden border border-slate-200 bg-slate-50 mb-4 group">
+              <img src="https://www.dmics.org/img/pub_ClimateCrisisandSustainableSolutions001.jpg" alt="Climate Crisis and Sustainable Solutions 6th WCDM" class="w-full h-72 object-contain p-2 group-hover:scale-105 transition-transform duration-300">
+            </a>
+            <span class="bg-saffron text-white text-xs font-bold px-3 py-1 uppercase">6th WCDM Publication</span>
+            <h3 class="h-serif font-black text-navy text-xl mt-3 mb-2">Climate Crisis and Sustainable Solutions</h3>
+            <p class="text-slate-600 text-sm">6<sup>th</sup> World Congress on Disaster Management, Dehradun</p>
+          </div>
+          <a href="https://www.dmics.org/img/ClimateCrisisandSustainableSolutions.pdf" target="_blank" rel="noopener noreferrer" class="mt-5 bg-saffron hover:bg-amber-600 text-white font-bold text-sm py-3 px-4 text-center inline-flex items-center justify-center gap-2 shadow">
+            <i class="fa-solid fa-file-pdf"></i> Download Full Publication
+          </a>
+        </article>
+
+        <!-- 5th WCDM Volumes Column (Vol I - V) -->
+        <div class="sm:col-span-2 space-y-4">
+          <div class="bg-navy text-white px-5 py-3 font-bold uppercase text-sm tracking-wide flex items-center justify-between">
+            <span><i class="fa-solid fa-book-bookmark text-saffron mr-2"></i>5th WCDM Research Volumes (Prelims &amp; Proceedings)</span>
+            <span class="text-xs text-slate-300 font-normal">New Delhi</span>
+          </div>
+
+          <!-- Vol 1 -->
+          <div class="bg-white border border-slate-200 p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm hover:border-gov transition-colors">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gov/10 text-gov flex items-center justify-center font-bold text-sm shrink-0">V-1</div>
+              <div>
+                <h4 class="font-bold text-navy text-base">Volume - I &middot; 5<sup>th</sup> WCDM e-Book</h4>
+                <p class="text-xs text-slate-500">Proceedings Prelims &amp; Research Compendium</p>
+              </div>
+            </div>
+            <a href="https://www.dmics.org/img/5th_WCDM_V-1_Prelims.pdf" target="_blank" rel="noopener noreferrer" class="bg-navy hover:bg-gov text-white font-bold text-xs py-2 px-4 inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-solid fa-file-pdf text-saffron"></i> View / Download
+            </a>
+          </div>
+
+          <!-- Vol 2 -->
+          <div class="bg-white border border-slate-200 p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm hover:border-gov transition-colors">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gov/10 text-gov flex items-center justify-center font-bold text-sm shrink-0">V-2</div>
+              <div>
+                <h4 class="font-bold text-navy text-base">Volume - II &middot; 5<sup>th</sup> WCDM e-Book</h4>
+                <p class="text-xs text-slate-500">Proceedings Prelims &amp; Research Compendium</p>
+              </div>
+            </div>
+            <a href="https://www.dmics.org/img/5th_WCDM_V-2_Prelims.pdf" target="_blank" rel="noopener noreferrer" class="bg-navy hover:bg-gov text-white font-bold text-xs py-2 px-4 inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-solid fa-file-pdf text-saffron"></i> View / Download
+            </a>
+          </div>
+
+          <!-- Vol 3 -->
+          <div class="bg-white border border-slate-200 p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm hover:border-gov transition-colors">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gov/10 text-gov flex items-center justify-center font-bold text-sm shrink-0">V-3</div>
+              <div>
+                <h4 class="font-bold text-navy text-base">Volume - III &middot; 5<sup>th</sup> WCDM e-Book</h4>
+                <p class="text-xs text-slate-500">Proceedings Prelims &amp; Research Compendium</p>
+              </div>
+            </div>
+            <a href="https://www.dmics.org/img/5th_WCDM_V-3_Prelims.pdf" target="_blank" rel="noopener noreferrer" class="bg-navy hover:bg-gov text-white font-bold text-xs py-2 px-4 inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-solid fa-file-pdf text-saffron"></i> View / Download
+            </a>
+          </div>
+
+          <!-- Vol 4 -->
+          <div class="bg-white border border-slate-200 p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm hover:border-gov transition-colors">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gov/10 text-gov flex items-center justify-center font-bold text-sm shrink-0">V-4</div>
+              <div>
+                <h4 class="font-bold text-navy text-base">Volume - IV &middot; 5<sup>th</sup> WCDM e-Book</h4>
+                <p class="text-xs text-slate-500">Proceedings Prelims &amp; Research Compendium</p>
+              </div>
+            </div>
+            <a href="https://www.dmics.org/img/5th_WCDM_V-4_Prelims.pdf" target="_blank" rel="noopener noreferrer" class="bg-navy hover:bg-gov text-white font-bold text-xs py-2 px-4 inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-solid fa-file-pdf text-saffron"></i> View / Download
+            </a>
+          </div>
+
+          <!-- Vol 5 -->
+          <div class="bg-white border border-slate-200 p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm hover:border-gov transition-colors">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 bg-gov/10 text-gov flex items-center justify-center font-bold text-sm shrink-0">V-5</div>
+              <div>
+                <h4 class="font-bold text-navy text-base">Volume - V &middot; 5<sup>th</sup> WCDM e-Book</h4>
+                <p class="text-xs text-slate-500">Proceedings Prelims &amp; Research Compendium</p>
+              </div>
+            </div>
+            <a href="https://www.dmics.org/img/5th_WCDM_V-5_Prelims.pdf" target="_blank" rel="noopener noreferrer" class="bg-navy hover:bg-gov text-white font-bold text-xs py-2 px-4 inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-solid fa-file-pdf text-saffron"></i> View / Download
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy-dark text-slate-300 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS" class="h-16 bg-white p-1 mb-4">
+      <p class="leading-relaxed max-w-md">Disaster Management Initiatives and Convergence Society &mdash; a convergence society for decision makers, practitioners and experts on Disaster Risk Reduction. Registered under the Societies Registration Act, Government of Andhra Pradesh.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase mb-3 tracking-wide">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a class="hover:text-saffron" href="about-us.html">About us</a></li>
+        <li><a class="hover:text-saffron" href="events.html">Events</a></li>
+        <li><a class="hover:text-saffron text-saffron font-semibold" href="reports.html">Reports / Publications</a></li>
+        <li><a class="hover:text-saffron" href="volunteer.html">Volunteer</a></li>
+        <li><a class="hover:text-saffron" href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase mb-3 tracking-wide">Contact</h4>
+      <ul class="space-y-2">
+        <li><i class="fa-solid fa-location-dot w-5 text-saffron"></i>Road No: 7, Banjara Hills, Hyderabad - 500034, India</li>
+        <li><i class="fa-solid fa-phone w-5 text-saffron"></i>+91-7893222289, +91-7893020209</li>
+        <li><i class="fa-solid fa-envelope w-5 text-saffron"></i>dmics.future@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-xs">&copy; DMICS. All rights reserved. &middot; Redesign preview</div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').onclick = () => document.getElementById('menu').classList.toggle('hidden');
+</script>
+</body>
+</html>

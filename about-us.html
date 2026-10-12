@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | DMICS - Disaster Management Initiatives and Convergence Society</title>
+<meta name="description" content="Learn about DMICS, established in 2005 in the aftermath of the Indian Ocean Tsunami. A premier civil society platform for Disaster Risk Reduction and organizers of the World Congress on Disaster Management (WCDM).">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style type="text/tailwindcss">
+@theme {
+  --color-navy: #0b2a4a;
+  --color-navy-dark: #071c33;
+  --color-gov: #1f5f99;
+  --color-saffron: #e07b00;
+  --color-paper: #f4f6f9;
+  --font-serif: "Merriweather", Georgia, serif;
+  --font-sans: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+}
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-sans); }
+.h-serif { font-family: var(--font-serif); }
+.dd { display:none; }
+.has-dd:hover > .dd, .has-dd:focus-within > .dd { display:block; }
+.ticker { animation: tick 28s linear infinite; white-space:nowrap; display:inline-block; padding-left:100%; }
+@keyframes tick { to { transform: translateX(-100%); } }
+</style>
+</head>
+<body class="bg-white text-slate-800">
+
+<!-- Top utility bar -->
+<div class="bg-navy-dark text-slate-200 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+    <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+      <span><i class="fa-solid fa-phone mr-1.5 text-saffron"></i><a href="tel:+917893222289">+91-7893222289</a>, <a href="tel:+917893020209">+91-7893020209</a></span>
+      <a href="mailto:dmics.future@gmail.com"><i class="fa-solid fa-envelope mr-1.5 text-saffron"></i>dmics.future@gmail.com</a>
+      <span class="hidden lg:inline"><i class="fa-solid fa-location-dot mr-1.5 text-saffron"></i>Road No: 7, Banjara Hills, Hyderabad - 500034, India</span>
+    </div>
+    <div class="flex items-center gap-4 text-base">
+      <a href="https://www.facebook.com/5thWCDM2021" aria-label="Facebook" class="hover:text-saffron"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://twitter.com/5thWCDM2021" aria-label="X / Twitter" class="hover:text-saffron"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/disaster-management-dmics/?viewAsMember=true" aria-label="LinkedIn" class="hover:text-saffron"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS logo" class="h-16 md:h-20 w-auto">
+      <div class="hidden sm:block">
+        <div class="h-serif text-navy text-lg md:text-2xl font-black leading-tight">Disaster Management Initiatives<br>and Convergence Society</div>
+        <div class="text-xs md:text-sm text-slate-500 tracking-wide uppercase mt-1">Est. 2005 &middot; Registered under the Societies Registration Act, Govt. of Andhra Pradesh</div>
+      </div>
+    </a>
+    <img src="https://www.dmics.org/assests/images/WCDM-Logo.png" alt="WCDM logo" class="h-16 md:h-20 w-auto">
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[15px] font-semibold">
+      <li><a href="index.html" class="block px-4 py-3.5 hover:bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-4 py-3.5 bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 bg-paper font-semibold text-gov" href="about-us.html">About us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li></ul></li>
+      <li><a href="milestone.html" class="block px-4 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-4 py-3.5 hover:bg-gov">Events</a></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li></ul></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="reports.html">Reports / Publications</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Media</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li></ul></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Collaborations <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="international-collaborations.html">International Collaboration</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="national-collaborations.html">National Collaboration</a></li></ul></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="collaborate.html">Collaborate with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="contact-us.html">Contact Us</a></li></ul></li>
+      <li><a href="Gallery.html" class="block px-4 py-3.5 hover:bg-gov">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Flash news -->
+<div class="bg-saffron text-white">
+  <div class="max-w-7xl mx-auto flex items-stretch">
+    <div class="bg-navy-dark px-4 py-2 font-bold uppercase text-sm flex items-center gap-2 shrink-0"><i class="fa-solid fa-bullhorn"></i> Flash News</div>
+    <div class="overflow-hidden flex-1 py-2 text-[15px] font-semibold"><span class="ticker">Upcoming Conference: Global Dialogue on Climate Change Adaptation and Disaster Risk Reduction (GDCCA &amp; DRR) - 3 to 6 June 2026, New Delhi</span></div>
+  </div>
+</div>
+
+<!-- Page Banner / Header Breadcrumb -->
+<section class="bg-gradient-to-r from-navy-dark via-navy to-gov text-white py-12 border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-slate-300 mb-3" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-house text-xs"></i> Home</a>
+      <span class="text-slate-400">/</span>
+      <span class="text-slate-400">Overview</span>
+      <span class="text-slate-400">/</span>
+      <span class="text-saffron font-semibold">About Us</span>
+    </nav>
+    <h1 class="h-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">About Us</h1>
+    <p class="text-slate-200 text-base sm:text-lg mt-2 max-w-3xl">Pioneering inclusive, resilient, and collaborative disaster risk governance in India and across the globe since 2005.</p>
+  </div>
+</section>
+
+<!-- Main Content Area -->
+<main class="bg-paper py-12">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Primary Content Column -->
+      <div class="lg:col-span-8 space-y-8">
+        
+        <!-- Section 1: Overview & Inception -->
+        <article class="bg-white p-6 sm:p-8 md:p-10 border-t-4 border-navy shadow-sm">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded bg-navy/10 text-navy font-bold">
+              <i class="fa-solid fa-landmark text-lg"></i>
+            </span>
+            <div>
+              <span class="text-xs uppercase font-bold text-saffron tracking-wider">Foundation &amp; Mandate</span>
+              <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy">About DMICS</h2>
+            </div>
+          </div>
+          <div class="w-16 h-1 bg-saffron mb-6"></div>
+
+          <div class="prose max-w-none text-slate-700 leading-relaxed space-y-5 text-base sm:text-[17px]">
+            <p>
+              The <strong>Disaster Management Initiatives and Convergence Society (DMICS)</strong> is a premiere civil society organization established in 2005 in the aftermath of Indian Ocean Tsunami. Over the years, DMICS has evolved from its origins as a think tank into a dynamic, community-centric institution dedicated to advancing inclusive and sustainable Disaster Risk Reduction (DRR).
+            </p>
+            <p>
+              DMICS serves as a pivotal platform that convenes Scientists, Decision-makers, Professionals, Practitioners, Policymakers, Researchers, Ambassadors, High Commissioners, Diplomats and Subject matter experts, fostering dialogue, collaboration, and innovation to strengthen disaster risk reduction and management practices.
+            </p>
+          </div>
+
+          <!-- Feature Highlight Badges -->
+          <div class="mt-8 pt-6 border-t border-slate-200 grid sm:grid-cols-3 gap-4">
+            <div class="bg-paper p-4 border-l-4 border-gov">
+              <div class="text-xs uppercase font-bold text-slate-500">Established In</div>
+              <div class="text-xl font-bold text-navy mt-1">2005</div>
+              <p class="text-xs text-slate-600 mt-1">Following Indian Ocean Tsunami</p>
+            </div>
+            <div class="bg-paper p-4 border-l-4 border-saffron">
+              <div class="text-xs uppercase font-bold text-slate-500">Legal Status</div>
+              <div class="text-base font-bold text-navy mt-1">Registered Society</div>
+              <p class="text-xs text-slate-600 mt-1">Societies Registration Act, Govt. of AP</p>
+            </div>
+            <div class="bg-paper p-4 border-l-4 border-navy">
+              <div class="text-xs uppercase font-bold text-slate-500">Core Mission</div>
+              <div class="text-base font-bold text-navy mt-1">Inclusive DRR</div>
+              <p class="text-xs text-slate-600 mt-1">Community resilience &amp; convergence</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- Section 2: Flagship Initiative - WCDM -->
+        <article class="bg-white p-6 sm:p-8 md:p-10 border-t-4 border-saffron shadow-sm">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded bg-saffron/10 text-saffron font-bold">
+              <i class="fa-solid fa-earth-americas text-lg"></i>
+            </span>
+            <div>
+              <span class="text-xs uppercase font-bold text-gov tracking-wider">Flagship Global Initiative</span>
+              <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy">World Congress on Disaster Management (WCDM)</h2>
+            </div>
+          </div>
+          <div class="w-16 h-1 bg-saffron mb-6"></div>
+
+          <div class="prose max-w-none text-slate-700 leading-relaxed space-y-5 text-base sm:text-[17px]">
+            <p>
+              The organization is dedicated to initiating and promoting innovative practices, ideas, and projects aimed at enhancing community resilience. Our flagship initiative, the <strong>World Congress on Disaster Management (WCDM)</strong>, has emerged as one of the world's largest recurring global platforms on Disaster Risk Reduction (DRR) outside the UN system. Since 2008, DMICS has successfully organized Six editions of WCDM jointly with various state governments in collaboration with NDMA, NIDM, UN Agencies, CDRI, various Scientific Institutions, Academia, as well as National, Regional, and International Stakeholders.
+            </p>
+            <p>
+              The first WCDM, held in 2008 in Hyderabad, was inaugurated by Hon'ble Dr. A. P. J. Abdul Kalam, former President of India, along with Dr. Y. S. Rajasekhara Reddy, the then Chief Minister of Andhra Pradesh. The keynote address was delivered by Gen. N. C. Vij, the then Vice-Chairman of NDMA. These events brought together delegates from national governments, UN organizations, scientific institutions, academia, civil society, and the private sector, setting a strong precedent for collaborative disaster management discourse in India and beyond.
+            </p>
+            <p>
+              Across Six consecutive editions, the World Congress on Disaster Management (WCDM) has been graced by eminent leaders, visionaries and policymakers, including Shri N. Chandrababu Naidu, Shri M. Venkaiah Naidu, Shri Devendra Fadnavis, Shri Rajnath Singh, Dr P G Dhar Chakrabarti, (IAS, the then Secretary, NDMA), Shri Kamal Kishore (Special Representative of the United Nations Secretary-General for Disaster Risk Reduction, and Head of UNDRR), Ms. Mami Mizutori (Former Special Representative of the United Nations Secretary-General for Disaster Risk Reduction, and Head of UNDRR), Shri Pushkar Singh Dhami, Shri Kiren Rijiju, Mr. Shombi Sharp (UN - Resident Representative in India) among others including participating delegates from over 100+ countries. Their presence reflects the high-level commitment and policy significance that WCDM commands in advancing India's disaster resilience and risk governance agenda.
+            </p>
+          </div>
+
+          <!-- Notable Leadership Quote / Highlight Box -->
+          <div class="mt-6 bg-navy text-white p-5 sm:p-6 rounded-none relative overflow-hidden">
+            <div class="flex items-start gap-4 relative z-10">
+              <i class="fa-solid fa-quote-left text-3xl text-saffron shrink-0"></i>
+              <div>
+                <p class="text-sm sm:text-base font-serif italic text-slate-100">
+                  "The First Global Congress in 2008 inaugurated by Bharat Ratna Dr. A.P.J. Abdul Kalam set a historic precedent for converging national and international disaster management expertise onto a common action-oriented platform."
+                </p>
+                <div class="mt-3 text-xs uppercase tracking-wider text-saffron font-bold">1st WCDM &middot; Hyderabad, October 2008</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Section 3: WCDM-DRR Awards -->
+        <article class="bg-white p-6 sm:p-8 md:p-10 border-t-4 border-gov shadow-sm">
+          <div class="flex items-center gap-3 mb-2">
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded bg-gov/10 text-gov font-bold">
+              <i class="fa-solid fa-award text-lg"></i>
+            </span>
+            <div>
+              <span class="text-xs uppercase font-bold text-saffron tracking-wider">Recognizing Excellence</span>
+              <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy">WCDM-DRR Awards</h2>
+            </div>
+          </div>
+          <div class="w-16 h-1 bg-saffron mb-6"></div>
+
+          <div class="prose max-w-none text-slate-700 leading-relaxed space-y-5 text-base sm:text-[17px]">
+            <p>
+              In 2022, DMICS took a significant step toward recognizing leadership and innovation in the disaster risk reduction (DRR) landscape by instituting the <strong>WCDM-DRR Awards, 2022</strong>. These awards honour outstanding individuals and institutions that have made exemplary contributions to strengthening India's disaster resilience and climate preparedness. The maiden awards ceremony, held on 22 June 2022, was graced by Hon'ble Shri G. Kishan Reddy, Hon'ble Minister of Culture, Tourism, and Development of the North Eastern Region, Government of India, setting a strong precedent in advancing India toward a more disaster-resilient future.
+            </p>
+            <p>
+              The recently held <strong>WCDM-DRR Awards, 2025</strong> ceremony, held on 15 January 2025, was graced by Shri Piyush Goyal, Hon'ble Union Minister of Commerce & Industry, Government of India, underscoring the importance of advancing resilience through evidence-based practice, innovation, and community-centred action. Justice Shri M. M. Kumar, Former Chief Justice of Jammu & Kashmir, Chair - Jury, WCDM DRR Awards and Shri Sanjay Kumar, IAS, Secretary, Department of School Education & Literacy, Ministry of Education, Government of India, graced the occasion as Guest of Honour.
+            </p>
+          </div>
+
+          <!-- Awards Edition Cards -->
+          <div class="mt-8 grid sm:grid-cols-2 gap-5">
+            <div class="border border-slate-200 bg-paper p-5 hover:border-saffron transition-colors">
+              <div class="flex items-center justify-between mb-2">
+                <span class="bg-gov text-white text-xs font-bold px-2.5 py-1 uppercase">Maiden Edition</span>
+                <span class="text-xs text-slate-500 font-semibold"><i class="fa-regular fa-calendar mr-1"></i>22 June 2022</span>
+              </div>
+              <h3 class="h-serif text-lg font-black text-navy mb-2">WCDM-DRR Awards 2022</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Chief Guest: <strong>Hon'ble Shri G. Kishan Reddy</strong>, Hon'ble Minister of Culture, Tourism, and Development of the North Eastern Region, Government of India.
+              </p>
+              <a href="wcdm-drr-awards-2022.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-gov hover:text-saffron mt-3">
+                View 2022 Awards Details <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+
+            <div class="border border-slate-200 bg-paper p-5 hover:border-saffron transition-colors">
+              <div class="flex items-center justify-between mb-2">
+                <span class="bg-saffron text-white text-xs font-bold px-2.5 py-1 uppercase">Recent Edition</span>
+                <span class="text-xs text-slate-500 font-semibold"><i class="fa-regular fa-calendar mr-1"></i>15 January 2025</span>
+              </div>
+              <h3 class="h-serif text-lg font-black text-navy mb-2">WCDM-DRR Awards 2025</h3>
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Chief Guest: <strong>Shri Piyush Goyal</strong>, Hon'ble Union Minister of Commerce &amp; Industry, GoI, alongside <strong>Justice Shri M. M. Kumar</strong> and <strong>Shri Sanjay Kumar, IAS</strong>.
+              </p>
+              <a href="wcdm-drr-awards-2025.html" class="inline-flex items-center gap-1.5 text-xs font-bold text-gov hover:text-saffron mt-3">
+                View 2025 Awards Details <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Right Sidebar Column -->
+      <aside class="lg:col-span-4 space-y-6">
+        
+        <!-- Overview Navigation Card -->
+        <div class="bg-white shadow-sm border-t-4 border-navy">
+          <h3 class="bg-navy text-white px-5 py-3.5 font-bold uppercase text-sm tracking-wide flex items-center gap-2">
+            <i class="fa-solid fa-compass text-saffron"></i> Overview Menu
+          </h3>
+          <ul class="divide-y divide-slate-100 text-[15px]">
+            <li>
+              <a href="about-us.html" class="flex items-center justify-between px-5 py-3 bg-paper text-gov font-bold border-l-4 border-saffron">
+                <span><i class="fa-solid fa-circle-check text-xs mr-2 text-saffron"></i>About Us</span>
+                <i class="fa-solid fa-chevron-right text-xs"></i>
+              </a>
+            </li>
+            <li>
+              <a href="vision.html" class="flex items-center justify-between px-5 py-3 hover:bg-paper text-slate-700 hover:text-navy transition-colors">
+                <span><i class="fa-regular fa-circle text-xs mr-2 text-slate-400"></i>Vision &amp; Mission</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+              </a>
+            </li>
+            <li>
+              <a href="strategicplan.html" class="flex items-center justify-between px-5 py-3 hover:bg-paper text-slate-700 hover:text-navy transition-colors">
+                <span><i class="fa-regular fa-circle text-xs mr-2 text-slate-400"></i>Strategic Plan</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+              </a>
+            </li>
+            <li>
+              <a href="foundermessage.html" class="flex items-center justify-between px-5 py-3 hover:bg-paper text-slate-700 hover:text-navy transition-colors">
+                <span><i class="fa-regular fa-circle text-xs mr-2 text-slate-400"></i>Founder's Message</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+              </a>
+            </li>
+            <li>
+              <a href="team.html" class="flex items-center justify-between px-5 py-3 hover:bg-paper text-slate-700 hover:text-navy transition-colors">
+                <span><i class="fa-regular fa-circle text-xs mr-2 text-slate-400"></i>Team</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+              </a>
+            </li>
+            <li>
+              <a href="milestone.html" class="flex items-center justify-between px-5 py-3 hover:bg-paper text-slate-700 hover:text-navy transition-colors">
+                <span><i class="fa-regular fa-circle text-xs mr-2 text-slate-400"></i>Our Journey / Milestones</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- At a Glance Stats -->
+        <div class="bg-navy text-white p-6 shadow-sm border-t-4 border-saffron">
+          <h3 class="h-serif text-xl font-bold mb-1 text-white">DMICS at a Glance</h3>
+          <div class="w-12 h-1 bg-saffron mb-5"></div>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-calendar-check text-saffron text-lg mt-0.5"></i>
+              <div>
+                <div class="text-2xl font-black">2005</div>
+                <div class="text-xs text-slate-300">Year Founded (Post-Tsunami)</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-globe text-saffron text-lg mt-0.5"></i>
+              <div>
+                <div class="text-2xl font-black">6 Editions</div>
+                <div class="text-xs text-slate-300">World Congress on Disaster Management</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-users-rectangle text-saffron text-lg mt-0.5"></i>
+              <div>
+                <div class="text-2xl font-black">100+ Countries</div>
+                <div class="text-xs text-slate-300">Global delegates and representation</div>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <i class="fa-solid fa-handshake text-saffron text-lg mt-0.5"></i>
+              <div>
+                <div class="text-2xl font-black">NDMA &bull; UN &bull; CDRI</div>
+                <div class="text-xs text-slate-300">Institutional collaborations</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming Event Promo -->
+        <div class="bg-white shadow-sm border-t-4 border-saffron">
+          <h3 class="bg-navy text-white px-5 py-3 font-bold uppercase text-sm tracking-wide">
+            <i class="fa-solid fa-bullhorn mr-2 text-saffron"></i>Upcoming Event
+          </h3>
+          <div class="p-5">
+            <span class="inline-block bg-red-600 text-white text-xs font-bold px-2 py-0.5 mb-2">NEW</span>
+            <h4 class="font-bold text-navy text-base leading-snug">Global Dialogue on Climate Change Adaptation and Disaster Risk Reduction (GDCCA &amp; DRR)</h4>
+            <p class="text-xs text-slate-500 mt-2"><i class="fa-regular fa-calendar mr-1"></i>3&ndash;6 June 2026 &middot; New Delhi</p>
+            <a href="https://gdccadrr.dmics.org/" class="inline-flex items-center gap-1.5 mt-4 text-xs font-bold bg-saffron hover:bg-amber-600 text-white px-3.5 py-2">
+              Visit Conference Site <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="bg-white p-5 border border-slate-200 shadow-sm">
+          <h4 class="font-bold text-navy uppercase text-xs tracking-wider mb-2 text-slate-500">Need More Information?</h4>
+          <p class="text-sm text-slate-700 leading-relaxed mb-4">Feel free to connect with our secretariat for institutional collaborations, research partnerships, and inquiries.</p>
+          <a href="contact-us.html" class="inline-flex items-center justify-center gap-2 w-full bg-navy hover:bg-gov text-white font-bold text-sm py-2.5">
+            <i class="fa-solid fa-envelope"></i> Contact Secretariat
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<!-- Collaborations Section -->
+<section class="bg-paper py-12 border-y border-slate-200">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="flex items-center justify-between mb-6">
+      <div>
+        <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy mb-1">Key Institutional Collaborations</h2>
+        <div class="w-16 h-1 bg-saffron"></div>
+      </div>
+      <a href="national-collaborations.html" class="text-sm font-bold text-gov hover:underline hidden sm:inline">View All Collaborations <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-4 items-center">
+      <div class="bg-white p-4 h-24 flex items-center justify-center shadow-sm"><img class="max-h-full" src="https://www.dmics.org/assests/images/associationuniversities.jpg" alt="Association of Universities"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center shadow-sm"><img class="max-h-full" src="https://www.dmics.org/assests/images/AU_logo.jpg" alt="Andhra University"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center shadow-sm"><img class="max-h-full" src="https://www.dmics.org/assests/images/ecil.jpg" alt="ECIL"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center shadow-sm"><img class="max-h-full" src="https://www.dmics.org/assests/images/INCOIS_Logo.png" alt="INCOIS"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center shadow-sm"><img class="max-h-full" src="https://www.dmics.org/assests/images/jnu_logo.png" alt="JNU"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center shadow-sm"><img class="max-h-full" src="https://www.dmics.org/assests/images/NAPSIPAG.png" alt="NAPSIPAG"></div>
+      <div class="bg-white p-4 h-24 flex items-center justify-center shadow-sm"><img class="max-h-full" src="https://www.dmics.org/assests/images/unicef_logo%20(1).gif" alt="UNICEF"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-navy-dark text-slate-300 text-sm">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS" class="h-16 bg-white p-1 mb-4">
+      <p class="leading-relaxed max-w-md">Disaster Management Initiatives and Convergence Society &mdash; a convergence society for decision makers, practitioners and experts on Disaster Risk Reduction. Registered under the Societies Registration Act, Government of Andhra Pradesh.</p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase mb-3 tracking-wide">Quick Links</h4>
+      <ul class="space-y-2">
+        <li><a class="hover:text-saffron text-saffron font-semibold" href="about-us.html">About us</a></li>
+        <li><a class="hover:text-saffron" href="events.html">Events</a></li>
+        <li><a class="hover:text-saffron" href="reports.html">Reports / Publications</a></li>
+        <li><a class="hover:text-saffron" href="volunteer.html">Volunteer</a></li>
+        <li><a class="hover:text-saffron" href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase mb-3 tracking-wide">Contact</h4>
+      <ul class="space-y-2">
+        <li><i class="fa-solid fa-location-dot w-5 text-saffron"></i>Road No: 7, Banjara Hills, Hyderabad - 500034, India</li>
+        <li><i class="fa-solid fa-phone w-5 text-saffron"></i>+91-7893222289, +91-7893020209</li>
+        <li><i class="fa-solid fa-envelope w-5 text-saffron"></i>dmics.future@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center text-xs">&copy; DMICS. All rights reserved. &middot; Redesign preview</div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn').onclick = () => document.getElementById('menu').classList.toggle('hidden');
+</script>
+</body>
+</html>
