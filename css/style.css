@@ -1,0 +1,70 @@
+/* ==========================================================================
+   Google Fonts: Classic Serif for Headlines + Clean Sans-serif for Body
+   - Headlines: Cinzel / Merriweather (Classic Serif)
+   - Body & UI: Plus Jakarta Sans / Inter (Clean Sans-serif)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Font Families */
+  --font-serif: 'Cinzel', 'Merriweather', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-headline: 'Cinzel', 'Merriweather', Georgia, serif;
+  --font-body: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Base Body Styling */
+html,
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headlines: Classic Serif */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h-serif,
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Body & Elements: Clean Sans-serif */
+p,
+span,
+a,
+label,
+input,
+textarea,
+select,
+button,
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Ensure .h-serif always uses serif family */
+.h-serif {
+  font-family: var(--font-serif) !important;
+}
+
+/* Specific Font Utilities if needed */
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif !important;
+}
+
+.font-merriweather {
+  font-family: 'Merriweather', Georgia, serif !important;
+}
+
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif !important;
+}
