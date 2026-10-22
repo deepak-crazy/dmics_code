@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulting &amp; Advisory Services | DMICS</title>
+  <meta name="description" content="DMICS Consulting & Advisory Services - helping governments, cities, agencies, and corporates strengthen disaster risk reduction and climate resilience.">
+  <link rel="icon" type="image/x-icon" href="https://www.dmics.org/assests/images/favicon.png">
+  <!-- Google Fonts: Classic Serif for Headlines + Clean Sans-serif for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0b2a4a;
+      --color-navy-dark: #071c33;
+      --color-navy-light: #133d69;
+      --color-gov: #1f5f99;
+      --color-saffron: #e07b00;
+      --color-saffron-dark: #b86200;
+      --color-paper: #f4f6f9;
+      --font-serif: "Cinzel", "Merriweather", Georgia, serif;
+      --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+    }
+    .h-serif { font-family: var(--font-serif); }
+    body { font-family: var(--font-sans); }
+    .ticker { animation: ticker 28s linear infinite; display: inline-block; white-space: nowrap; }
+    @keyframes ticker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    .has-dd:hover .dd { display: block; }
+    .dd { display: none; }
+  </style>
+</head>
+<body class="bg-paper text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+<!-- Top utility bar -->
+<div class="bg-navy-dark text-slate-200 text-xs py-1.5 px-4 border-b border-navy-light/40">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+    <div class="flex items-center gap-4">
+      <span><i class="fa-solid fa-envelope text-saffron mr-1.5"></i> dmics.india@gmail.com</span>
+      <span class="hidden sm:inline"><i class="fa-solid fa-phone text-saffron mr-1.5"></i> +91 99081 29288</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="media.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-newspaper text-saffron mr-1"></i>Press &amp; Media</a>
+      <span class="text-slate-500">|</span>
+      <a href="resilience-alliance.html" class="text-saffron font-bold hover:underline"><i class="fa-solid fa-shield-halved mr-1"></i>Resilience Alliance</a>
+      <span class="text-slate-500">|</span>
+      <a href="https://www.wcdm.co.in" target="_blank" class="hover:text-saffron transition-colors">WCDM Portal &#8599;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS logo" class="h-16 md:h-20 w-auto">
+      <div class="hidden sm:block">
+        <div class="h-serif text-navy text-lg md:text-2xl font-black leading-tight">Disaster Management Initiatives<br>and Convergence Society</div>
+        <div class="text-xs md:text-sm text-slate-500 tracking-wide uppercase mt-1">Est. 2005 &middot; Registered under the Societies Registration Act, Govt. of Andhra Pradesh</div>
+      </div>
+    </a>
+    <img src="https://www.dmics.org/assests/images/WCDM-Logo.png" alt="WCDM logo" class="h-16 md:h-20 w-auto">
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[14px] font-semibold items-center">
+      <li><a href="index.html" class="block px-3.5 py-3.5 hover:bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-3.5 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="about-us.html">About Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li>
+          <li class="border-t border-slate-100"><a class="block px-4 py-2.5 hover:bg-paper" href="mayor.html">Mayor</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="mayors-resilience-forum.html">Mayors' Resilience Forum &amp; Caucus</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="resilience-alliance.html">Resilience Alliance</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="consulting-advisory.html">Consulting &amp; Advisory</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Press &amp; Media</a></li>
+        </ul>
+      </li>
+      <li><a href="milestone.html" class="block px-3.5 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-4 py-3.5 hover:bg-gov">Events</a></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li>
+        </ul>
+      </li>
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="reports.html">Reports / Publications</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="collaborate.html">Collaborate with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="Gallery.html" class="block px-3.5 py-3.5 hover:bg-gov">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="bg-gradient-to-r from-navy-dark via-navy to-gov text-white py-14 border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-slate-300 mb-3" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-house text-xs"></i> Home</a>
+      <span class="text-slate-400">/</span>
+      <span class="text-saffron font-semibold">Consulting &amp; Advisory</span>
+    </nav>
+    <span class="text-xs font-bold tracking-widest text-saffron uppercase block mb-1">Institutional Technical Services</span>
+    <h1 class="h-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">Advisory Services for Governments &amp; Institutions</h1>
+    <div class="w-20 h-1 bg-saffron mt-3"></div>
+    <p class="text-slate-200 mt-4 max-w-3xl text-sm sm:text-base leading-relaxed">
+      DMICS brings two decades of convergence into hands-on advisory work &mdash; helping governments, cities, agencies, and corporates strengthen resilience with evidence, science, and practical field experience.
+    </p>
+    <div class="mt-6 flex flex-wrap gap-4">
+      <a href="#cards" class="bg-saffron hover:bg-amber-600 text-white font-bold px-6 py-3 text-sm uppercase tracking-wider transition-colors shadow">
+        Explore Services &darr;
+      </a>
+      <a href="#discuss" class="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 text-sm uppercase tracking-wider transition-colors border border-white/20">
+        Discuss an Engagement &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- The Four Service Cards Section (from DMICS v4) -->
+<main class="py-16 max-w-7xl mx-auto px-4 w-full" id="cards">
+
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="text-xs font-bold uppercase tracking-widest text-saffron">Consulting Practice Areas</span>
+    <h2 class="h-serif text-3xl sm:text-4xl font-black text-navy mt-1 mb-3">Our Four Core Advisory Verticals</h2>
+    <div class="w-16 h-1 bg-saffron mx-auto mb-4"></div>
+    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+      Tailored for state disaster management authorities (SDMAs), municipal corporations, multilateral funding partners, infrastructure developers, and corporate CSR entities.
+    </p>
+  </div>
+
+  <!-- Four Service Cards Grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+
+    <!-- Card 1: Strategy -->
+    <article class="bg-white border-t-4 border-gov p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+      <div>
+        <div class="w-12 h-12 rounded bg-paper text-gov border border-slate-200 flex items-center justify-center text-xl mb-4 group-hover:bg-gov group-hover:text-white transition-colors">
+          <i class="fa-solid fa-chess-knight"></i>
+        </div>
+        <span class="text-[11px] font-bold text-gov uppercase tracking-wider block mb-1">Strategy</span>
+        <h3 class="h-serif text-lg font-bold text-navy mb-2">Policy &amp; Strategy Advisory</h3>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          DRR and climate-adaptation strategy, framework alignment, and institutional roadmaps.
+        </p>
+
+        <h4 class="text-[11px] font-bold text-navy uppercase tracking-wider mb-2">Key Deliverables:</h4>
+        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>State &amp; District DRR Roadmaps</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Sendai Framework Auditing</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Inter-agency Convergence SOPs</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Climate Adaptation Legislation</li>
+        </ul>
+      </div>
+
+      <a href="#discuss" onclick="setService('Policy & Strategy Advisory');" class="text-xs font-bold text-gov hover:text-saffron transition-colors inline-flex items-center gap-1">
+        Request Strategy Scoping &rarr;
+      </a>
+    </article>
+
+    <!-- Card 2: Assessment -->
+    <article class="bg-white border-t-4 border-saffron p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+      <div>
+        <div class="w-12 h-12 rounded bg-paper text-saffron border border-slate-200 flex items-center justify-center text-xl mb-4 group-hover:bg-saffron group-hover:text-white transition-colors">
+          <i class="fa-solid fa-chart-pie"></i>
+        </div>
+        <span class="text-[11px] font-bold text-saffron uppercase tracking-wider block mb-1">Assessment</span>
+        <h3 class="h-serif text-lg font-bold text-navy mb-2">Risk &amp; Resilience Assessment</h3>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          Multi-hazard risk assessment and resilient planning for regions, cities, and assets.
+        </p>
+
+        <h4 class="text-[11px] font-bold text-navy uppercase tracking-wider mb-2">Key Deliverables:</h4>
+        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>GIS Vulnerability &amp; Hazard Mapping</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Urban Heat &amp; Flood Inundation Modeling</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Critical Infrastructure Stress Tests</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Coastal &amp; Seismic Risk Audits</li>
+        </ul>
+      </div>
+
+      <a href="#discuss" onclick="setService('Risk & Resilience Assessment');" class="text-xs font-bold text-saffron hover:text-navy transition-colors inline-flex items-center gap-1">
+        Request Risk Assessment &rarr;
+      </a>
+    </article>
+
+    <!-- Card 3: Capacity -->
+    <article class="bg-white border-t-4 border-navy p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+      <div>
+        <div class="w-12 h-12 rounded bg-paper text-navy border border-slate-200 flex items-center justify-center text-xl mb-4 group-hover:bg-navy group-hover:text-white transition-colors">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <span class="text-[11px] font-bold text-navy uppercase tracking-wider block mb-1">Capacity</span>
+        <h3 class="h-serif text-lg font-bold text-navy mb-2">Institutional &amp; Capacity Design</h3>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          Designing systems, standards, and training for authorities and responders.
+        </p>
+
+        <h4 class="text-[11px] font-bold text-navy uppercase tracking-wider mb-2">Key Deliverables:</h4>
+        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Emergency Operations Centers (EOC) Protocols</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>First Responder Technical Curricula</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Tabletop &amp; Mock Drill Simulations</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Incident Command System (ICS) Setup</li>
+        </ul>
+      </div>
+
+      <a href="#discuss" onclick="setService('Institutional & Capacity Design');" class="text-xs font-bold text-navy hover:text-gov transition-colors inline-flex items-center gap-1">
+        Request Capacity Design &rarr;
+      </a>
+    </article>
+
+    <!-- Card 4: Programmes -->
+    <article class="bg-white border-t-4 border-emerald-600 p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between group">
+      <div>
+        <div class="w-12 h-12 rounded bg-paper text-emerald-600 border border-slate-200 flex items-center justify-center text-xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+          <i class="fa-solid fa-list-check"></i>
+        </div>
+        <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider block mb-1">Programmes</span>
+        <h3 class="h-serif text-lg font-bold text-navy mb-2">Programme Design &amp; Evaluation</h3>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          Designing, monitoring, and evaluating resilience programmes and their impact.
+        </p>
+
+        <h4 class="text-[11px] font-bold text-navy uppercase tracking-wider mb-2">Key Deliverables:</h4>
+        <ul class="text-xs text-slate-500 space-y-1.5 mb-6">
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Third-party Impact Evaluations</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Build-Back-Better Reconstruction Audits</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>Socio-economic Vulnerability Metric Tracking</li>
+          <li><i class="fa-solid fa-arrow-right text-saffron text-[10px] mr-1"></i>CSR Programme Alignment &amp; Verification</li>
+        </ul>
+      </div>
+
+      <a href="#discuss" onclick="setService('Programme Design & Evaluation');" class="text-xs font-bold text-emerald-700 hover:text-navy transition-colors inline-flex items-center gap-1">
+        Request Programme Review &rarr;
+      </a>
+    </article>
+
+  </div>
+
+  <!-- Advisory Methodology / Lifecycle -->
+  <section class="bg-white p-8 sm:p-12 border-t-4 border-navy shadow-sm mb-16">
+    <div class="max-w-3xl mb-10">
+      <span class="text-xs font-bold uppercase tracking-widest text-saffron">Proven Methodology</span>
+      <h3 class="h-serif text-2xl sm:text-3xl font-black text-navy mt-1">Our Evidence-Led Advisory Process</h3>
+      <div class="w-16 h-1 bg-saffron mt-2 mb-4"></div>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        DMICS deploys multidisciplinary teams combining hydrologists, geologists, urban planners, public health experts, and governance specialists to ensure executable interventions.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+      <div class="p-5 bg-paper border border-slate-200 relative">
+        <span class="text-3xl font-black text-slate-300 font-serif">01</span>
+        <h4 class="font-bold text-navy text-sm mt-2 mb-1">Diagnostic Scoping</h4>
+        <p class="text-xs text-slate-600 leading-relaxed">Historical hazard audits, data collection, and stakeholder consultations across line departments.</p>
+      </div>
+
+      <div class="p-5 bg-paper border border-slate-200 relative">
+        <span class="text-3xl font-black text-slate-300 font-serif">02</span>
+        <h4 class="font-bold text-navy text-sm mt-2 mb-1">Scientific Modeling</h4>
+        <p class="text-xs text-slate-600 leading-relaxed">GIS mapping, return-period simulations, vulnerability indices, and Sendai compliance gap analysis.</p>
+      </div>
+
+      <div class="p-5 bg-paper border border-slate-200 relative">
+        <span class="text-3xl font-black text-slate-300 font-serif">03</span>
+        <h4 class="font-bold text-navy text-sm mt-2 mb-1">Co-Design &amp; Policy</h4>
+        <p class="text-xs text-slate-600 leading-relaxed">Collaborative drafting of institutional SOPs, municipal bylaws, capital allocation roadmaps, and training plans.</p>
+      </div>
+
+      <div class="p-5 bg-paper border border-slate-200 relative">
+        <span class="text-3xl font-black text-slate-300 font-serif">04</span>
+        <h4 class="font-bold text-navy text-sm mt-2 mb-1">Field Verification</h4>
+        <p class="text-xs text-slate-600 leading-relaxed">Operational drills, real-time feedback loops, impact tracking, and long-term institutional mentoring.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Discussion / Engagement Form Section (Discuss an engagement from v4) -->
+  <section class="bg-navy text-white p-8 sm:p-12 rounded-lg shadow-xl" id="discuss">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-8">
+        <span class="text-xs font-bold uppercase tracking-widest text-saffron">Institutional Inquiry</span>
+        <h3 class="h-serif text-2xl sm:text-3xl font-black mt-1">Discuss an Engagement</h3>
+        <div class="w-16 h-1 bg-saffron mx-auto mt-2 mb-4"></div>
+        <p class="text-slate-200 text-xs sm:text-sm leading-relaxed">
+          Reach out directly to the DMICS Advisory Desk. A senior advisor will review your institutional terms of reference and schedule an initial scoping session.
+        </p>
+      </div>
+
+      <form onsubmit="event.preventDefault(); document.getElementById('consultSuccess').classList.remove('hidden'); this.reset();" class="space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-slate-200" for="cName">Contact Person Name <span class="text-saffron">*</span></label>
+            <input type="text" id="cName" required placeholder="Dr. / Mr. / Ms. Name" class="w-full bg-white text-slate-800 px-4 py-2.5 text-sm focus:outline-none border border-slate-300">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-slate-200" for="cEmail">Official Email <span class="text-saffron">*</span></label>
+            <input type="email" id="cEmail" required placeholder="official@gov.in or org" class="w-full bg-white text-slate-800 px-4 py-2.5 text-sm focus:outline-none border border-slate-300">
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-slate-200" for="cOrg">Department / Institution <span class="text-saffron">*</span></label>
+            <input type="text" id="cOrg" required placeholder="e.g. State Disaster Authority / Municipal Corp" class="w-full bg-white text-slate-800 px-4 py-2.5 text-sm focus:outline-none border border-slate-300">
+          </div>
+          <div>
+            <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-slate-200" for="serviceSelect">Service Vertical Required <span class="text-saffron">*</span></label>
+            <select id="serviceSelect" required class="w-full bg-white text-slate-800 px-4 py-2.5 text-sm focus:outline-none border border-slate-300">
+              <option value="Policy & Strategy Advisory">Policy &amp; Strategy Advisory</option>
+              <option value="Risk & Resilience Assessment">Risk &amp; Resilience Assessment</option>
+              <option value="Institutional & Capacity Design">Institutional &amp; Capacity Design</option>
+              <option value="Programme Design & Evaluation">Programme Design &amp; Evaluation</option>
+              <option value="Multi-Vertical Advisory">Comprehensive Multi-Sector Technical Advisory</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider mb-1 text-slate-200" for="cMessage">Scope / Project Overview <span class="text-saffron">*</span></label>
+          <textarea id="cMessage" rows="4" required placeholder="Outline the geography, timeframe, hazard priorities, and key objectives of your planned initiative..." class="w-full bg-white text-slate-800 px-4 py-2.5 text-sm focus:outline-none border border-slate-300"></textarea>
+        </div>
+
+        <div class="text-center pt-2">
+          <button type="submit" class="bg-saffron hover:bg-amber-600 text-white font-bold text-sm uppercase tracking-wider px-8 py-3.5 transition-colors shadow-lg cursor-pointer inline-flex items-center gap-2">
+            Submit Engagement Request <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </form>
+
+      <div id="consultSuccess" class="hidden mt-6 p-6 bg-emerald-900/80 border border-emerald-400 rounded text-center">
+        <i class="fa-solid fa-circle-check text-emerald-300 text-3xl mb-2"></i>
+        <h4 class="font-bold text-white text-lg">Inquiry Received</h4>
+        <p class="text-xs sm:text-sm text-slate-200 mt-1">
+          Thank you for reaching out to DMICS Advisory Services. Our technical advisory secretariat will contact your office within 24 hours to schedule a confidential preliminary scoping session.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy-dark text-slate-300 text-sm mt-16">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS" class="h-16 bg-white p-1 mb-4">
+      <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+        Disaster Management Initiatives and Convergence Society (DMICS) is a registered society committed to advancing disaster risk reduction, scientific convergence, community resilience, and climate change adaptation across the globe.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Institutional Services</h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="consulting-advisory.html" class="hover:text-saffron text-saffron font-semibold">Consulting &amp; Advisory</a></li>
+        <li><a href="resilience-alliance.html" class="hover:text-saffron">Resilience Alliance</a></li>
+        <li><a href="mayor.html" class="hover:text-saffron">Office of the Mayor</a></li>
+        <li><a href="mayors-resilience-forum.html" class="hover:text-saffron">Mayors' Resilience Forum</a></li>
+        <li><a href="reports.html" class="hover:text-saffron">Reports &amp; Proceedings</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Secretariat</h4>
+      <p class="text-xs text-slate-400 leading-relaxed mb-2">
+        601, Meenakshi House, Road No. 7, Banjara Hills, Hyderabad &ndash; 500034, India
+      </p>
+      <p class="text-xs text-slate-400"><i class="fa-solid fa-phone text-saffron mr-1"></i>+91 99081 29288</p>
+      <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-envelope text-saffron mr-1"></i>dmics.india@gmail.com</p>
+    </div>
+  </div>
+  <div class="border-t border-navy-light/40 py-4 text-center text-xs text-slate-400">
+    &copy; 2026 Disaster Management Initiatives and Convergence Society (DMICS). All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn')?.addEventListener('click', function() {
+    document.getElementById('menu')?.classList.toggle('hidden');
+  });
+
+  function setService(serviceName) {
+    const sel = document.getElementById('serviceSelect');
+    if (sel) {
+      sel.value = serviceName;
+    }
+  }
+</script>
+</body>
+</html>

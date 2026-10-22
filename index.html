@@ -38,17 +38,23 @@ body { font-family: var(--font-sans); }
 <body class="bg-white text-slate-800">
 
 <!-- Top utility bar -->
-<div class="bg-navy-dark text-slate-200 text-sm">
-  <div class="max-w-7xl mx-auto px-4 py-2 flex flex-wrap items-center justify-between gap-2">
+<div class="bg-navy-dark text-slate-200 text-xs py-1.5 px-4 border-b border-navy-light/40">
+  <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
     <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
       <span><i class="fa-solid fa-phone mr-1.5 text-saffron"></i><a href="tel:+917893222289">+91-7893222289</a>, <a href="tel:+917893020209">+91-7893020209</a></span>
       <a href="mailto:dmics.future@gmail.com"><i class="fa-solid fa-envelope mr-1.5 text-saffron"></i>dmics.future@gmail.com</a>
       <span class="hidden lg:inline"><i class="fa-solid fa-location-dot mr-1.5 text-saffron"></i>Road No: 7, Banjara Hills, Hyderabad - 500034, India</span>
     </div>
-    <div class="flex items-center gap-4 text-base">
-      <a href="https://www.facebook.com/5thWCDM2021" aria-label="Facebook" class="hover:text-saffron"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="https://twitter.com/5thWCDM2021" aria-label="X / Twitter" class="hover:text-saffron"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://www.linkedin.com/company/disaster-management-dmics/?viewAsMember=true" aria-label="LinkedIn" class="hover:text-saffron"><i class="fa-brands fa-linkedin-in"></i></a>
+    <div class="flex items-center gap-3 text-xs">
+      <a href="media.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-newspaper text-saffron mr-1"></i>Press &amp; Media</a>
+      <span class="text-slate-500">|</span>
+      <a href="resilience-alliance.html" class="text-saffron font-bold hover:underline"><i class="fa-solid fa-shield-halved mr-1"></i>Resilience Alliance</a>
+      <span class="text-slate-500">|</span>
+      <div class="flex gap-2 text-sm">
+        <a href="https://www.facebook.com/5thWCDM2021" aria-label="Facebook" class="hover:text-saffron"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://twitter.com/5thWCDM2021" aria-label="X / Twitter" class="hover:text-saffron"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/disaster-management-dmics/?viewAsMember=true" aria-label="LinkedIn" class="hover:text-saffron"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </div>
   </div>
 </div>
@@ -71,39 +77,49 @@ body { font-family: var(--font-sans); }
 <nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
   <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
     <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
-    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[15px] font-semibold">
-      <li><a href="index.html" class="block px-4 py-3.5 bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
-      <li class="has-dd relative"><a href="about-us.html" class="block px-4 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
-        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[14px] font-semibold items-center">
+      <li><a href="index.html" class="block px-3.5 py-3.5 bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-3.5 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="about-us.html">About us</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
-          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li></ul></li>
-      <li><a href="milestone.html" class="block px-4 py-3.5 hover:bg-gov">Our Journey</a></li>
-      <li><a href="events.html" class="block px-4 py-3.5 hover:bg-gov">Events</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li>
+          <li class="border-t border-slate-100"><a class="block px-4 py-2.5 hover:bg-paper" href="mayor.html">Mayor</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="mayors-resilience-forum.html">Mayors' Resilience Forum &amp; Caucus</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="resilience-alliance.html">Resilience Alliance</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="consulting-advisory.html">Consulting &amp; Advisory</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Press &amp; Media</a></li>
+        </ul>
+      </li>
+      <li><a href="milestone.html" class="block px-3.5 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-3.5 py-3.5 hover:bg-gov">Events</a></li>
+
       <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
         <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
-          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li></ul></li>
-      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
         <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="reports.html">Reports / Publications</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
-          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Media</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li></ul></li>
-      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Collaborations <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Collaborations <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
         <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="international-collaborations.html">International Collaboration</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="national-collaborations.html">National Collaboration</a></li></ul></li>
-      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
         <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="collaborate.html">Collaborate with Us</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
           <li><a class="block px-4 py-2.5 hover:bg-paper" href="contact-us.html">Contact Us</a></li></ul></li>
-      <li><a href="Gallery.html" class="block px-4 py-3.5 hover:bg-gov">Gallery</a></li>
+      <li><a href="Gallery.html" class="block px-3.5 py-3.5 hover:bg-gov">Gallery</a></li>
     </ul>
   </div>
 </nav>
@@ -134,13 +150,70 @@ body { font-family: var(--font-sans); }
   <button id="next" class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-saffron text-white w-10 h-10" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
 </section>
 
+<!-- Dr. Kalam Founding Spirit Band (Directly After Carousel - DMICS v4 Layout) -->
+<section id="founder-band" class="bg-paper border-b border-slate-200 py-12 sm:py-16">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-12 gap-8 sm:gap-12 items-center">
+      
+      <!-- Photograph on the Left -->
+      <div class="lg:col-span-5">
+        <figure class="relative rounded-lg overflow-hidden shadow-2xl bg-navy border-4 border-white max-w-md mx-auto aspect-[4/5] flex items-center justify-center">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/A._P._J._Abdul_Kalam.jpg" 
+               alt="Bharat Ratna Dr. A.P.J. Abdul Kalam" 
+               class="w-full h-full object-cover object-top"
+               onerror="this.src='https://www.dmics.org/assests/images/gallery-6.JPG';">
+          <figcaption class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-dark via-navy/90 to-transparent p-4 sm:p-5 text-white">
+            <span class="bg-saffron text-white text-[10px] font-bold px-2 py-0.5 uppercase tracking-wider rounded inline-block mb-1">Founding Patron</span>
+            <div class="h-serif font-bold text-base sm:text-lg leading-tight">Bharat Ratna Dr. A.P.J. Abdul Kalam</div>
+            <div class="text-xs text-slate-300 mt-0.5">Inaugurated the 1st World Congress on Disaster Management, Hyderabad, 2008</div>
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Quote and Content on the Right -->
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-saffron">
+          <span class="w-8 h-0.5 bg-saffron"></span>
+          <span>Our Founding Spirit</span>
+        </div>
+
+        <!-- The Quote -->
+        <blockquote class="h-serif text-2xl sm:text-3xl lg:text-4xl font-black text-navy leading-snug">
+          &ldquo;We should not give up and we should not allow the problem to defeat us.&rdquo;
+        </blockquote>
+
+        <!-- Name immediately under the quote -->
+        <div class="text-saffron-dark font-bold text-base sm:text-lg">
+          &mdash; Bharat Ratna Dr A.P.J. Abdul Kalam, Former President of India
+        </div>
+
+        <!-- Explanatory Context -->
+        <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+          When Bharat Ratna Dr. A.P.J. Abdul Kalam inaugurated the first World Congress on Disaster Management in 2008, he set DMICS on its course. His conviction was simple and enduring: safeguarding lives is a shared national mission, and science, compassion and preparedness must work as one. That founding spirit still guides every convening, partnership and project we undertake.
+        </p>
+
+        <!-- Action Links -->
+        <div class="pt-2 flex flex-wrap items-center gap-4">
+          <a href="milestone.html" class="inline-flex items-center gap-2 bg-navy hover:bg-gov text-white font-bold px-6 py-3 text-xs sm:text-sm uppercase tracking-wider transition-colors shadow">
+            Explore Our Journey <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+          <a href="https://www.wcdm.co.in" target="_blank" class="inline-flex items-center gap-2 text-gov hover:text-saffron font-bold text-xs sm:text-sm transition-colors">
+            World Congress Archives &#8599;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- Quick links -->
 <section class="bg-navy">
   <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 text-white text-center font-bold">
     <a href="Gallery.html" class="py-5 border-r border-white/10 hover:bg-gov"><i class="fa-solid fa-images text-2xl text-saffron block mb-1"></i>Gallery</a>
-    <a href="news.html" class="py-5 md:border-r border-white/10 hover:bg-gov"><i class="fa-solid fa-newspaper text-2xl text-saffron block mb-1"></i>Disaster News</a>
+    <a href="resilience-alliance.html" class="py-5 md:border-r border-white/10 hover:bg-gov"><i class="fa-solid fa-shield-halved text-2xl text-saffron block mb-1"></i>Resilience Alliance</a>
     <a href="events.html" class="py-5 border-r border-white/10 hover:bg-gov"><i class="fa-solid fa-calendar-days text-2xl text-saffron block mb-1"></i>Events</a>
-    <a href="ourpresence.html" class="py-5 hover:bg-gov"><i class="fa-solid fa-earth-asia text-2xl text-saffron block mb-1"></i>Our Presence</a>
+    <a href="consulting-advisory.html" class="py-5 hover:bg-gov"><i class="fa-solid fa-handshake-angle text-2xl text-saffron block mb-1"></i>Consulting Services</a>
   </div>
 </section>
 

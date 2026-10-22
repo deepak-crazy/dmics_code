@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Office of the Mayor &amp; Mayoral Engagement Programme | DMICS</title>
+  <meta name="description" content="Office of the Mayor and Mayoral Engagement Programme by DMICS - translating disaster risk reduction and climate adaptation into municipal leadership.">
+  <link rel="icon" type="image/x-icon" href="https://www.dmics.org/assests/images/favicon.png">
+  <!-- Google Fonts: Classic Serif for Headlines + Clean Sans-serif for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0b2a4a;
+      --color-navy-dark: #071c33;
+      --color-navy-light: #133d69;
+      --color-gov: #1f5f99;
+      --color-saffron: #e07b00;
+      --color-saffron-dark: #b86200;
+      --color-paper: #f4f6f9;
+      --font-serif: "Cinzel", "Merriweather", Georgia, serif;
+      --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+    }
+    .h-serif { font-family: var(--font-serif); }
+    body { font-family: var(--font-sans); }
+    .ticker { animation: ticker 28s linear infinite; display: inline-block; white-space: nowrap; }
+    @keyframes ticker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    .has-dd:hover .dd { display: block; }
+    .dd { display: none; }
+  </style>
+</head>
+<body class="bg-paper text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+<!-- Top utility bar -->
+<div class="bg-navy-dark text-slate-200 text-xs py-1.5 px-4 border-b border-navy-light/40">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+    <div class="flex items-center gap-4">
+      <span><i class="fa-solid fa-envelope text-saffron mr-1.5"></i> dmics.india@gmail.com</span>
+      <span class="hidden sm:inline"><i class="fa-solid fa-phone text-saffron mr-1.5"></i> +91 99081 29288</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="media.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-newspaper text-saffron mr-1"></i>Press &amp; Media</a>
+      <span class="text-slate-500">|</span>
+      <a href="resilience-alliance.html" class="text-saffron font-bold hover:underline"><i class="fa-solid fa-shield-halved mr-1"></i>Resilience Alliance</a>
+      <span class="text-slate-500">|</span>
+      <a href="https://www.wcdm.co.in" target="_blank" class="hover:text-saffron transition-colors">WCDM Portal &#8599;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS logo" class="h-16 md:h-20 w-auto">
+      <div class="hidden sm:block">
+        <div class="h-serif text-navy text-lg md:text-2xl font-black leading-tight">Disaster Management Initiatives<br>and Convergence Society</div>
+        <div class="text-xs md:text-sm text-slate-500 tracking-wide uppercase mt-1">Est. 2005 &middot; Registered under the Societies Registration Act, Govt. of Andhra Pradesh</div>
+      </div>
+    </a>
+    <img src="https://www.dmics.org/assests/images/WCDM-Logo.png" alt="WCDM logo" class="h-16 md:h-20 w-auto">
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[14px] font-semibold items-center">
+      <li><a href="index.html" class="block px-3.5 py-3.5 hover:bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-3.5 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="about-us.html">About us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li>
+          <li class="border-t border-slate-100"><a class="block px-4 py-2.5 bg-paper font-semibold text-gov" href="mayor.html">Mayor</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="mayors-resilience-forum.html">Mayors' Resilience Forum &amp; Caucus</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="resilience-alliance.html">Resilience Alliance</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="consulting-advisory.html">Consulting &amp; Advisory</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Press &amp; Media</a></li>
+        </ul>
+      </li>
+      <li><a href="milestone.html" class="block px-3.5 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-3.5 py-3.5 hover:bg-gov">Events</a></li>
+      
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="reports.html">Reports / Publications</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="collaborate.html">Collaborate with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="Gallery.html" class="block px-3.5 py-3.5 hover:bg-gov">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="bg-gradient-to-r from-navy-dark via-navy to-gov text-white py-12 border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-slate-300 mb-3" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-house text-xs"></i> Home</a>
+      <span class="text-slate-400">/</span>
+      <span class="text-slate-400">City Leadership</span>
+      <span class="text-slate-400">/</span>
+      <span class="text-saffron font-semibold">Mayor</span>
+    </nav>
+    <span class="text-xs font-bold tracking-widest text-saffron uppercase block mb-1">Municipal Governance &amp; City Resilience</span>
+    <h1 class="h-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">Mayor: Cities &amp; the Leaders Who Run Them</h1>
+    <div class="w-20 h-1 bg-saffron mt-3"></div>
+    <p class="text-slate-200 mt-4 max-w-3xl text-sm sm:text-base leading-relaxed">
+      Mayors sit closest to the risk. They own the drains, the shelters, the building approvals, and the emergency response &mdash; and they answer for all of it. This page carries both halves of the DMICS engagement with them: the office that leads it, and the programme that runs it.
+    </p>
+  </div>
+</section>
+
+<!-- Main Profile Section (DMICS v4 Layout) -->
+<main class="py-14 max-w-7xl mx-auto px-4 w-full">
+
+  <!-- Mayor Profile Card -->
+  <section class="bg-white border-t-4 border-navy shadow-md p-6 sm:p-10 mb-12">
+    <div class="grid md:grid-cols-12 gap-8 items-start">
+      
+      <!-- Portrait Column -->
+      <div class="md:col-span-4 lg:col-span-4">
+        <div class="relative bg-navy rounded-lg overflow-hidden shadow-lg border-2 border-slate-200 aspect-[3/4] flex items-center justify-center">
+          <img src="https://www.dmics.org/assests/images/gallery-6.JPG" alt="Mayor Portrait Placeholder" class="w-full h-full object-cover">
+          <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy-dark via-navy/80 to-transparent p-4 text-white text-xs">
+            <span class="bg-saffron text-white text-[10px] font-bold px-2 py-0.5 uppercase tracking-wider rounded inline-block mb-1">Portrait Placeholder</span>
+            <div class="font-bold text-sm">[Name of the Mayor]</div>
+            <div class="text-slate-300 text-[11px]">[Designation], [City]</div>
+          </div>
+        </div>
+        <p class="text-[11px] text-slate-500 text-center mt-2 italic">Awaiting high-resolution official portrait from the DMICS Secretariat</p>
+      </div>
+
+      <!-- Content Column -->
+      <div class="md:col-span-8 lg:col-span-8 space-y-5">
+        <div>
+          <span class="inline-block bg-navy-light/10 text-gov text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-2">Office of the Mayor</span>
+          <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy">[Name of the Mayor]</h2>
+          <p class="text-sm font-semibold text-saffron-dark mt-1">[Designation], [City] &middot; Chair, Mayors' Resilience Forum</p>
+        </div>
+
+        <!-- Pull Quote -->
+        <blockquote class="border-l-4 border-saffron bg-paper p-5 italic text-slate-700 text-base sm:text-lg leading-relaxed shadow-sm">
+          &ldquo;[Pull quote from the Mayor on why city leadership is the front line of disaster risk reduction and climate adaptation.]&rdquo;
+        </blockquote>
+
+        <!-- Detailed Description -->
+        <div class="space-y-3 text-slate-700 text-sm sm:text-base leading-relaxed">
+          <p>
+            A dedicated profile covering the Mayor's portfolio, the resilience agenda for the city, the work taken forward with DMICS, and the speeches, appearances, and publications that go with it.
+          </p>
+          <p>
+            This page is purpose-built to hold a full biography, official address to municipal delegates, civic resilience milestones, city hazard mitigation priorities, and a downloadable media kit for press and partner institutions.
+          </p>
+        </div>
+
+        <!-- Key Focus Areas for the City -->
+        <div class="pt-4 border-t border-slate-200">
+          <h4 class="text-xs font-bold uppercase text-navy tracking-wider mb-3">Priority Mandates for Urban Resilience:</h4>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="bg-paper border border-slate-300 text-slate-700 px-3 py-1.5 font-medium rounded-full"><i class="fa-solid fa-water text-gov mr-1.5"></i>Urban Drainage &amp; Flood Action</span>
+            <span class="bg-paper border border-slate-300 text-slate-700 px-3 py-1.5 font-medium rounded-full"><i class="fa-solid fa-temperature-high text-saffron mr-1.5"></i>Municipal Heat Response Protocols</span>
+            <span class="bg-paper border border-slate-300 text-slate-700 px-3 py-1.5 font-medium rounded-full"><i class="fa-solid fa-tower-broadcast text-gov mr-1.5"></i>Ward-Level Early Warning Drills</span>
+            <span class="bg-paper border border-slate-300 text-slate-700 px-3 py-1.5 font-medium rounded-full"><i class="fa-solid fa-building-shield text-navy mr-1.5"></i>Resilient Building Codes &amp; Zoning</span>
+          </div>
+        </div>
+
+        <div class="pt-3">
+          <a href="contact-us.html" class="inline-flex items-center gap-2 bg-navy hover:bg-gov text-white font-bold text-sm px-6 py-3 transition-colors shadow">
+            Connect with Mayoral Cell <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Mayoral Engagement Programme (3 Cards Layout from v4) -->
+  <section class="mb-14">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <span class="text-xs font-bold uppercase tracking-widest text-saffron">Structured Municipal Action</span>
+      <h2 class="h-serif text-2xl sm:text-3xl font-black text-navy mt-1 mb-3">The Mayoral Engagement Programme</h2>
+      <div class="w-16 h-1 bg-saffron mx-auto mb-4"></div>
+      <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+        DMICS works collaboratively with municipal corporations, mayors, and urban local bodies through a three-pronged framework combining peer reviews, technical advisory, and high-level national policy dialogues.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <article class="bg-white border-t-4 border-gov p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-lg bg-paper text-gov border border-slate-200 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-city"></i>
+          </div>
+          <span class="text-[11px] font-bold text-gov uppercase tracking-wider block mb-1">Programme</span>
+          <h3 class="h-serif text-lg font-bold text-navy mb-2">Mayoral Engagement Programme</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+            A structured programme of work with city leaders: resilience reviews, peer exchange between cities, and direct technical support in translating national frameworks into municipal action.
+          </p>
+        </div>
+        <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3">
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Peer city resilience reviews</li>
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Inter-municipal learning exchanges</li>
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Framework localization toolkits</li>
+        </ul>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="bg-white border-t-4 border-saffron p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-lg bg-paper text-saffron border border-slate-200 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <span class="text-[11px] font-bold text-saffron uppercase tracking-wider block mb-1">Support</span>
+          <h3 class="h-serif text-lg font-bold text-navy mb-2">City Resilience Advisory</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+            Hands-on advisory for municipal bodies on risk assessment, urban heat and flood action plans, early warning at ward level, and resilient infrastructure planning.
+          </p>
+        </div>
+        <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3">
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Ward-level risk mapping &amp; audits</li>
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Urban heat &amp; flood response plans</li>
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Drainage &amp; resilient infrastructure</li>
+        </ul>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="bg-white border-t-4 border-navy p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+        <div>
+          <div class="w-12 h-12 rounded-lg bg-paper text-navy border border-slate-200 flex items-center justify-center text-xl mb-4">
+            <i class="fa-solid fa-users-rectangle"></i>
+          </div>
+          <span class="text-[11px] font-bold text-navy uppercase tracking-wider block mb-1">Recognition</span>
+          <h3 class="h-serif text-lg font-bold text-navy mb-2">Mayors' Roundtable at the Congress</h3>
+          <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+            A standing mayoral session at the World Congress, where city leaders present what has worked, and what has not, to their peers and to national policymakers.
+          </p>
+        </div>
+        <ul class="text-xs text-slate-500 space-y-1.5 border-t border-slate-100 pt-3">
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Plenary representation at WCDM</li>
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Direct dialogue with Union Ministries</li>
+          <li><i class="fa-solid fa-check text-saffron mr-1.5"></i>Mayoral Declaration on Urban Risk</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Clear Placeholder Notice (from v4) -->
+  <div class="bg-amber-50 border-l-4 border-saffron p-6 rounded-r shadow-sm mb-12">
+    <div class="flex items-start gap-4">
+      <i class="fa-solid fa-circle-info text-saffron text-2xl mt-0.5 shrink-0"></i>
+      <div>
+        <h4 class="font-bold text-navy text-sm uppercase tracking-wider">Awaiting Confirmation by DMICS Secretariat</h4>
+        <p class="text-slate-700 text-xs sm:text-sm leading-relaxed mt-1">
+          The Mayor's official name, designation, high-resolution portrait, formal message, and the finalized curriculum of the Mayoral Engagement Programme are awaiting confirmation by the DMICS Secretariat.
+        </p>
+        <p class="text-slate-600 text-xs mt-2">
+          <strong>Note:</strong> This page represents the individual Office of the Mayor and the Mayoral Engagement Programme. It is kept intentionally distinct from the multi-city <em>Mayors' Resilience Forum</em> to prevent administrative confusion.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Distinct Platform Callout Banner -->
+  <div class="bg-navy text-white p-8 sm:p-10 rounded-lg shadow-lg flex flex-col md:flex-row items-center justify-between gap-6">
+    <div>
+      <span class="text-xs uppercase font-bold text-saffron tracking-wider">Standing Multi-City Platform</span>
+      <h3 class="h-serif text-xl sm:text-2xl font-black mt-1">Mayors' Resilience Forum &amp; Parliamentarians' Caucus</h3>
+      <p class="text-slate-300 text-xs sm:text-sm max-w-2xl mt-2 leading-relaxed">
+        Looking for the standing collective forum convening city leaders and legislative representatives from across India and partner nations?
+      </p>
+    </div>
+    <a href="mayors-resilience-forum.html" class="inline-flex items-center gap-2 bg-saffron hover:bg-amber-600 text-white font-bold px-6 py-3 text-sm uppercase tracking-wider whitespace-nowrap transition-colors shadow">
+      Go to Mayors' Forum &amp; Caucus <i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy-dark text-slate-300 text-sm mt-16">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS" class="h-16 bg-white p-1 mb-4">
+      <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+        Disaster Management Initiatives and Convergence Society (DMICS) is a registered society committed to advancing disaster risk reduction, scientific convergence, community resilience, and climate change adaptation across the globe.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">City &amp; Policy Platforms</h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="mayor.html" class="hover:text-saffron text-saffron font-semibold">Office of the Mayor</a></li>
+        <li><a href="mayors-resilience-forum.html" class="hover:text-saffron">Mayors' Resilience Forum</a></li>
+        <li><a href="resilience-alliance.html" class="hover:text-saffron">Resilience Alliance</a></li>
+        <li><a href="consulting-advisory.html" class="hover:text-saffron">Consulting &amp; Advisory</a></li>
+        <li><a href="media.html" class="hover:text-saffron">Press &amp; Media</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Secretariat</h4>
+      <p class="text-xs text-slate-400 leading-relaxed mb-2">
+        601, Meenakshi House, Road No. 7, Banjara Hills, Hyderabad &ndash; 500034, India
+      </p>
+      <p class="text-xs text-slate-400"><i class="fa-solid fa-phone text-saffron mr-1"></i>+91 99081 29288</p>
+      <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-envelope text-saffron mr-1"></i>dmics.india@gmail.com</p>
+    </div>
+  </div>
+  <div class="border-t border-navy-light/40 py-4 text-center text-xs text-slate-400">
+    &copy; 2026 Disaster Management Initiatives and Convergence Society (DMICS). All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn')?.addEventListener('click', function() {
+    document.getElementById('menu')?.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

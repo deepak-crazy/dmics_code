@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DMICS Resilience Alliance | Official Membership Platform</title>
+  <meta name="description" content="Join the DMICS Resilience Alliance - a global membership community for institutions, researchers, city leaders and professionals dedicated to disaster risk reduction.">
+  <link rel="icon" type="image/x-icon" href="https://www.dmics.org/assests/images/favicon.png">
+  <!-- Google Fonts: Classic Serif for Headlines + Clean Sans-serif for Body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-navy: #0b2a4a;
+      --color-navy-dark: #071c33;
+      --color-navy-light: #133d69;
+      --color-gov: #1f5f99;
+      --color-saffron: #e07b00;
+      --color-saffron-dark: #b86200;
+      --color-paper: #f4f6f9;
+      --font-serif: "Cinzel", "Merriweather", Georgia, serif;
+      --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+    }
+    .h-serif { font-family: var(--font-serif); }
+    body { font-family: var(--font-sans); }
+    .ticker { animation: ticker 28s linear infinite; display: inline-block; white-space: nowrap; }
+    @keyframes ticker { 0% { transform: translateX(100%); } 100% { transform: translateX(-100%); } }
+    .has-dd:hover .dd { display: block; }
+    .dd { display: none; }
+  </style>
+</head>
+<body class="bg-paper text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+<!-- Top utility bar -->
+<div class="bg-navy-dark text-slate-200 text-xs py-1.5 px-4 border-b border-navy-light/40">
+  <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+    <div class="flex items-center gap-4">
+      <span><i class="fa-solid fa-envelope text-saffron mr-1.5"></i> dmics.india@gmail.com</span>
+      <span class="hidden sm:inline"><i class="fa-solid fa-phone text-saffron mr-1.5"></i> +91 99081 29288</span>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="media.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-newspaper text-saffron mr-1"></i>Press &amp; Media</a>
+      <span class="text-slate-500">|</span>
+      <a href="resilience-alliance.html" class="text-saffron font-bold hover:underline"><i class="fa-solid fa-shield-halved mr-1"></i>Resilience Alliance</a>
+      <span class="text-slate-500">|</span>
+      <a href="https://www.wcdm.co.in" target="_blank" class="hover:text-saffron transition-colors">WCDM Portal &#8599;</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="bg-white border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
+    <a href="index.html" class="flex items-center gap-4">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS logo" class="h-16 md:h-20 w-auto">
+      <div class="hidden sm:block">
+        <div class="h-serif text-navy text-lg md:text-2xl font-black leading-tight">Disaster Management Initiatives<br>and Convergence Society</div>
+        <div class="text-xs md:text-sm text-slate-500 tracking-wide uppercase mt-1">Est. 2005 &middot; Registered under the Societies Registration Act, Govt. of Andhra Pradesh</div>
+      </div>
+    </a>
+    <img src="https://www.dmics.org/assests/images/WCDM-Logo.png" alt="WCDM logo" class="h-16 md:h-20 w-auto">
+  </div>
+</header>
+
+<!-- Navigation -->
+<nav class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between">
+    <button id="menuBtn" class="lg:hidden py-3 text-xl" aria-label="Menu"><i class="fa-solid fa-bars"></i> <span class="text-base ml-2">Menu</span></button>
+    <ul id="menu" class="hidden lg:flex flex-col lg:flex-row w-full text-[14px] font-semibold items-center">
+      <li><a href="index.html" class="block px-3.5 py-3.5 hover:bg-gov"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="has-dd relative"><a href="about-us.html" class="block px-3.5 py-3.5 hover:bg-gov">Overview <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="about-us.html">About Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="vision.html">Vision &amp; Mission</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="strategicplan.html">Strategic Plan</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="foundermessage.html">Founder's Message</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="team.html">Team</a></li>
+          <li class="border-t border-slate-100"><a class="block px-4 py-2.5 hover:bg-paper" href="mayor.html">Mayor</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="mayors-resilience-forum.html">Mayors' Resilience Forum &amp; Caucus</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="resilience-alliance.html">Resilience Alliance</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="consulting-advisory.html">Consulting &amp; Advisory</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="media.html">Press &amp; Media</a></li>
+        </ul>
+      </li>
+      <li><a href="milestone.html" class="block px-3.5 py-3.5 hover:bg-gov">Our Journey</a></li>
+      <li><a href="events.html" class="block px-4 py-3.5 hover:bg-gov">Events</a></li>
+      <li class="has-dd relative"><a href="#" class="block px-4 py-3.5 hover:bg-gov">DRR Awards <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-64 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2022.html">WCDM DRR Awards 2022</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="wcdm-drr-awards-2025.html">WCDM DRR Awards 2025</a></li>
+        </ul>
+      </li>
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Resources <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-60 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="reports.html">Reports / Publications</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="blogs.html">Blogs</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="newsletter.html">Newsletter</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="miscellaneous.html">Miscellaneous</a></li>
+        </ul>
+      </li>
+
+      <li class="has-dd relative"><a href="#" class="block px-3.5 py-3.5 hover:bg-gov">Get Involved <i class="fa-solid fa-chevron-down text-[10px]"></i></a>
+        <ul class="dd lg:absolute left-0 top-full min-w-56 bg-white text-slate-800 shadow-xl border-t-4 border-saffron font-normal">
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="volunteer.html">Volunteer</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="collaborate.html">Collaborate with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="workwithus.html">Work with Us</a></li>
+          <li><a class="block px-4 py-2.5 hover:bg-paper" href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </li>
+      <li><a href="Gallery.html" class="block px-3.5 py-3.5 hover:bg-gov">Gallery</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Page Banner -->
+<section class="bg-gradient-to-r from-navy-dark via-navy to-gov text-white py-14 border-b-4 border-saffron">
+  <div class="max-w-7xl mx-auto px-4">
+    <nav class="flex items-center gap-2 text-sm text-slate-300 mb-3" aria-label="Breadcrumb">
+      <a href="index.html" class="hover:text-saffron transition-colors"><i class="fa-solid fa-house text-xs"></i> Home</a>
+      <span class="text-slate-400">/</span>
+      <span class="text-saffron font-semibold">Resilience Alliance</span>
+    </nav>
+    <div class="inline-flex items-center gap-2 bg-saffron/20 border border-saffron text-saffron-dark bg-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
+      <i class="fa-solid fa-shield-halved"></i> Institutional &amp; Professional Membership
+    </div>
+    <h1 class="h-serif text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">The DMICS Resilience Alliance</h1>
+    <div class="w-20 h-1 bg-saffron mt-3"></div>
+    <p class="text-slate-200 mt-4 max-w-3xl text-sm sm:text-base leading-relaxed">
+      A membership community for institutions, governments, universities, and disaster risk professionals committed to disaster risk reduction &mdash; with privileged access to knowledge, convenings, and the global DMICS network.
+    </p>
+    <div class="mt-6 flex flex-wrap gap-4">
+      <a href="#tiers" class="bg-saffron hover:bg-amber-600 text-white font-bold px-6 py-3 text-sm uppercase tracking-wider transition-colors shadow">
+        View Membership Tiers &darr;
+      </a>
+      <a href="#apply" class="bg-white/10 hover:bg-white/20 text-white font-bold px-6 py-3 text-sm uppercase tracking-wider transition-colors border border-white/20">
+        Join the Alliance &rarr;
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Why Join Section -->
+<section class="py-12 bg-white border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center sm:text-left">
+      <div class="p-5 border-l-4 border-gov bg-paper">
+        <i class="fa-solid fa-book-bookmark text-2xl text-gov mb-2"></i>
+        <h3 class="font-bold text-navy text-sm mb-1">Knowledge Hub Access</h3>
+        <p class="text-xs text-slate-600">Full repository of Scopus-indexed WCDM papers, policy briefs, and guidelines.</p>
+      </div>
+      <div class="p-5 border-l-4 border-saffron bg-paper">
+        <i class="fa-solid fa-ticket text-2xl text-saffron mb-2"></i>
+        <h3 class="font-bold text-navy text-sm mb-1">Congress Priority</h3>
+        <p class="text-xs text-slate-600">Priority seating, speaker nominations, and delegation packages at World Congresses.</p>
+      </div>
+      <div class="p-5 border-l-4 border-navy bg-paper">
+        <i class="fa-solid fa-handshake text-2xl text-navy mb-2"></i>
+        <h3 class="font-bold text-navy text-sm mb-1">Convergence Network</h3>
+        <p class="text-xs text-slate-600">Connect directly with ministries, UN agencies, and leading academic institutions.</p>
+      </div>
+      <div class="p-5 border-l-4 border-emerald-600 bg-paper">
+        <i class="fa-solid fa-certificate text-2xl text-emerald-600 mb-2"></i>
+        <h3 class="font-bold text-navy text-sm mb-1">Advisory &amp; Certification</h3>
+        <p class="text-xs text-slate-600">Tailored institutional resilience assessments, reviews, and specialized credentials.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Membership Tiers Section (3 Tiers from DMICS v4) -->
+<main class="py-16 max-w-7xl mx-auto px-4 w-full" id="tiers">
+
+  <div class="text-center max-w-3xl mx-auto mb-14">
+    <span class="text-xs font-bold uppercase tracking-widest text-saffron">Select Your Tier</span>
+    <h2 class="h-serif text-3xl sm:text-4xl font-black text-navy mt-1 mb-3">Membership Categories &amp; Benefits</h2>
+    <div class="w-16 h-1 bg-saffron mx-auto mb-4"></div>
+    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+      Whether you are an individual researcher, an academic institution, a municipal corporation, or an international development body &mdash; there is a place for you in the Alliance.
+    </p>
+  </div>
+
+  <!-- 3 Tiers Grid -->
+  <div class="grid lg:grid-cols-3 gap-8 items-stretch mb-12">
+
+    <!-- Tier 1: Individual -->
+    <article class="bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-md transition-shadow p-8 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="bg-navy/10 text-navy text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Individual</span>
+          <i class="fa-solid fa-user text-xl text-slate-400"></i>
+        </div>
+        <div class="h-serif text-3xl font-black text-navy mb-1">On application</div>
+        <div class="text-xs text-slate-500 font-semibold mb-4">per annum &middot; Individual Practitioner</div>
+        <p class="text-xs text-slate-600 pb-5 border-b border-slate-100">
+          For disaster management professionals, researchers, independent consultants, and field practitioners.
+        </p>
+
+        <ul class="py-6 space-y-3.5 text-xs sm:text-sm text-slate-700">
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>Full member access to the online <strong>Knowledge Hub</strong> &amp; research repository</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>Exclusive invitations to technical dialogues, webinars, and policy roundtables</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>Monthly <strong>DMICS Dispatch</strong> briefing with curated global DRR developments</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>Discounted individual delegate passes to all <strong>World Congress (WCDM)</strong> editions</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>Official digital membership credential &amp; listing in Alliance Member Directory</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pt-6 border-t border-slate-100">
+        <a href="#apply" onclick="selectTier('Individual');" class="block text-center w-full bg-navy hover:bg-gov text-white font-bold py-3.5 px-6 text-sm uppercase tracking-wider transition-colors shadow">
+          Join the Alliance
+        </a>
+      </div>
+    </article>
+
+    <!-- Tier 2: Institutional (Featured) -->
+    <article class="bg-white border-2 border-saffron rounded-lg shadow-xl relative p-8 flex flex-col justify-between transform lg:-translate-y-2">
+      <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-saffron text-white text-[11px] font-black uppercase tracking-widest px-4 py-1 rounded-full shadow">
+        Recommended &middot; Featured
+      </div>
+
+      <div>
+        <div class="flex items-center justify-between mb-4 mt-1">
+          <span class="bg-saffron/15 text-saffron-dark text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Institutional</span>
+          <i class="fa-solid fa-building-columns text-2xl text-saffron"></i>
+        </div>
+        <div class="h-serif text-3xl font-black text-navy mb-1">On application</div>
+        <div class="text-xs text-slate-500 font-semibold mb-4">per annum &middot; Organizational Membership</div>
+        <p class="text-xs text-slate-600 pb-5 border-b border-slate-100">
+          For state governments, municipal corporations, universities, research centers, corporate CSR wings, and NGOs.
+        </p>
+
+        <ul class="py-6 space-y-3.5 text-xs sm:text-sm text-slate-700">
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-saffron mt-0.5 shrink-0"></i>
+            <span><strong>Everything in Individual</strong>, extended for your entire organizational team (up to 15 members)</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-saffron mt-0.5 shrink-0"></i>
+            <span><strong>Priority delegation passes</strong> at the World Congress on Disaster Management (WCDM)</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-saffron mt-0.5 shrink-0"></i>
+            <span>Convening and co-hosting opportunities for joint technical sessions and research tracks</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-saffron mt-0.5 shrink-0"></i>
+            <span>Institutional branding on DMICS portals, published proceedings, and congress banners</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-saffron mt-0.5 shrink-0"></i>
+            <span>Participation in the <strong>Mayors' Resilience Forum</strong> or academic working groups</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-saffron mt-0.5 shrink-0"></i>
+            <span>Annual institutional resilience audit &amp; strategic roadmap consultation</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pt-6 border-t border-slate-100">
+        <a href="#apply" onclick="selectTier('Institutional');" class="block text-center w-full bg-saffron hover:bg-amber-600 text-white font-bold py-3.5 px-6 text-sm uppercase tracking-wider transition-colors shadow-lg">
+          Join the Alliance
+        </a>
+      </div>
+    </article>
+
+    <!-- Tier 3: Patron -->
+    <article class="bg-white border border-slate-200 rounded-lg shadow-sm hover:shadow-md transition-shadow p-8 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-4">
+          <span class="bg-navy/10 text-navy text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">Patron</span>
+          <i class="fa-solid fa-award text-2xl text-gov"></i>
+        </div>
+        <div class="h-serif text-3xl font-black text-navy mb-1">On application</div>
+        <div class="text-xs text-slate-500 font-semibold mb-4">per annum &middot; Strategic Leadership</div>
+        <p class="text-xs text-slate-600 pb-5 border-b border-slate-100">
+          For apex institutions, multilateral bodies, philanthropic foundations, and corporate champions supporting the mission.
+        </p>
+
+        <ul class="py-6 space-y-3.5 text-xs sm:text-sm text-slate-700">
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span><strong>Everything in Institutional</strong>, with unlimited organizational user access</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>A designated seat on the <strong>DMICS Strategic Advisory Council</strong> &amp; Congress Steering Committee</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>Prominent <strong>Patron recognition</strong> across all DMICS global platforms, reports, and plenaries</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>VIP stage presence and keynote speaking slots at the World Congress editions</span>
+          </li>
+          <li class="flex items-start gap-2.5">
+            <i class="fa-solid fa-check text-gov mt-0.5 shrink-0"></i>
+            <span>Bespoke collaborative research whitepaper published under joint institutional imprint</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pt-6 border-t border-slate-100">
+        <a href="#apply" onclick="selectTier('Patron');" class="block text-center w-full bg-navy hover:bg-gov text-white font-bold py-3.5 px-6 text-sm uppercase tracking-wider transition-colors shadow">
+          Join the Alliance
+        </a>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Compliance & Legal Note (from v4) -->
+  <div class="bg-white border-l-4 border-gov p-6 shadow-sm mb-16 rounded-r">
+    <div class="flex items-start gap-3.5">
+      <i class="fa-solid fa-lock text-gov text-xl mt-0.5 shrink-0"></i>
+      <div class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+        <strong class="text-navy font-bold">Secure &amp; Compliant Membership Processing:</strong>
+        Membership tiers, contribution structures, and specific benefits are indicative and confirmed upon formal Secretariat onboarding. Payments are processed through an accredited, PCI-DSS compliant payment infrastructure. All member personal and organizational data is processed in strict accordance with India's <em>Digital Personal Data Protection (DPDP) Act, 2023</em>, with GDPR-equivalent safeguards for international institutional members.
+      </div>
+    </div>
+  </div>
+
+  <!-- Application Form Section -->
+  <section class="bg-white border-t-4 border-saffron shadow-lg p-8 sm:p-12 max-w-4xl mx-auto" id="apply">
+    <div class="text-center max-w-xl mx-auto mb-8">
+      <span class="text-xs font-bold uppercase tracking-widest text-saffron">Membership Enrolment</span>
+      <h3 class="h-serif text-2xl sm:text-3xl font-black text-navy mt-1">Join the Alliance</h3>
+      <div class="w-16 h-1 bg-saffron mx-auto mt-2 mb-3"></div>
+      <p class="text-slate-600 text-xs sm:text-sm">
+        Complete the application below. Our Membership Secretariat will review your credentials and issue formal confirmation within 2 business days.
+      </p>
+    </div>
+
+    <form onsubmit="event.preventDefault(); document.getElementById('allianceSuccess').classList.remove('hidden'); this.reset();" class="space-y-5">
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5" for="fullName">Full Name <span class="text-red-500">*</span></label>
+          <input type="text" id="fullName" required placeholder="Your Name" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5" for="email">Official / Work Email <span class="text-red-500">*</span></label>
+          <input type="email" id="email" required placeholder="name@organization.org" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov">
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5" for="organization">Organization / Institution <span class="text-red-500">*</span></label>
+          <input type="text" id="organization" required placeholder="Ministry / University / Corporation" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5" for="designation">Designation / Role</label>
+          <input type="text" id="designation" placeholder="e.g. Director, Mayor, Researcher" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov">
+        </div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5" for="tierSelect">Selected Membership Tier <span class="text-red-500">*</span></label>
+          <select id="tierSelect" required class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov">
+            <option value="Institutional">Institutional Tier (Recommended for Organizations)</option>
+            <option value="Individual">Individual Tier (Professionals &amp; Researchers)</option>
+            <option value="Patron">Patron Tier (Strategic Benefactors)</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5" for="phone">Contact Telephone / WhatsApp</label>
+          <input type="tel" id="phone" placeholder="+91 XXXXX XXXXX" class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-xs font-bold text-navy uppercase tracking-wider mb-1.5" for="interests">Primary Areas of Interest / Collaborative Goals</label>
+        <textarea id="interests" rows="3" placeholder="Briefly describe your institution's DRR focus (e.g., urban risk, early warning, training, research)..." class="w-full bg-paper border border-slate-300 px-4 py-2.5 text-sm focus:outline-none focus:border-gov"></textarea>
+      </div>
+
+      <div class="flex items-start gap-2 pt-2">
+        <input type="checkbox" id="consent" required class="mt-1">
+        <label for="consent" class="text-xs text-slate-600 leading-normal">
+          I consent to DMICS processing my organizational data in accordance with the Digital Personal Data Protection (DPDP) Act, 2023 for membership administration and official communications.
+        </label>
+      </div>
+
+      <div class="text-center pt-4">
+        <button type="submit" class="bg-saffron hover:bg-amber-600 text-white font-black text-sm uppercase tracking-widest px-10 py-4 transition-colors shadow-lg cursor-pointer inline-flex items-center gap-2">
+          Submit Application &mdash; Join the Alliance <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </form>
+
+    <!-- Success Message Modal -->
+    <div id="allianceSuccess" class="hidden mt-6 p-6 bg-emerald-50 border border-emerald-300 rounded text-center">
+      <i class="fa-solid fa-circle-check text-emerald-600 text-3xl mb-2"></i>
+      <h4 class="font-bold text-navy text-lg">Application Submitted Successfully!</h4>
+      <p class="text-xs sm:text-sm text-slate-700 mt-1">
+        Thank you for applying to the DMICS Resilience Alliance. Our Membership Secretariat has received your submission and will contact your nominated office within 2 business days with credentials and onboarding documentation.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-navy-dark text-slate-300 text-sm mt-16">
+  <div class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div class="md:col-span-2">
+      <img src="https://www.dmics.org/assests/images/logo.png" alt="DMICS" class="h-16 bg-white p-1 mb-4">
+      <p class="text-xs text-slate-400 max-w-md leading-relaxed">
+        Disaster Management Initiatives and Convergence Society (DMICS) is a registered society committed to advancing disaster risk reduction, scientific convergence, community resilience, and climate change adaptation across the globe.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Alliance &amp; Programs</h4>
+      <ul class="space-y-2 text-xs">
+        <li><a href="resilience-alliance.html" class="hover:text-saffron text-saffron font-semibold">Resilience Alliance</a></li>
+        <li><a href="consulting-advisory.html" class="hover:text-saffron">Consulting &amp; Advisory</a></li>
+        <li><a href="mayor.html" class="hover:text-saffron">Office of the Mayor</a></li>
+        <li><a href="mayors-resilience-forum.html" class="hover:text-saffron">Mayors' Resilience Forum</a></li>
+        <li><a href="events.html" class="hover:text-saffron">World Congress (WCDM)</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-white font-bold uppercase text-xs tracking-wider mb-4 border-b border-navy-light pb-2">Secretariat</h4>
+      <p class="text-xs text-slate-400 leading-relaxed mb-2">
+        601, Meenakshi House, Road No. 7, Banjara Hills, Hyderabad &ndash; 500034, India
+      </p>
+      <p class="text-xs text-slate-400"><i class="fa-solid fa-phone text-saffron mr-1"></i>+91 99081 29288</p>
+      <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-envelope text-saffron mr-1"></i>dmics.india@gmail.com</p>
+    </div>
+  </div>
+  <div class="border-t border-navy-light/40 py-4 text-center text-xs text-slate-400">
+    &copy; 2026 Disaster Management Initiatives and Convergence Society (DMICS). All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('menuBtn')?.addEventListener('click', function() {
+    document.getElementById('menu')?.classList.toggle('hidden');
+  });
+
+  function selectTier(tierName) {
+    const select = document.getElementById('tierSelect');
+    if (select) {
+      select.value = tierName;
+    }
+  }
+</script>
+</body>
+</html>
